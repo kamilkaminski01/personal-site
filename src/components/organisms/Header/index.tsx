@@ -1,5 +1,13 @@
+import TitleSection from './partials/sections/TitleSection'
+import Navbar from './partials/components/Navbar'
+
 const Header = () => {
-  return <h1>Kamil Kamiński</h1>
+  return (
+    <header>
+      <TitleSection />
+      <Navbar />
+    </header>
+  )
 }
 
 export default Header

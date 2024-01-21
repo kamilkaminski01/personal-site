@@ -6,10 +6,20 @@
 
 body {
   color: $white;
-  background-color: $navy;
+  background-color: $dark-navy;
   font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  ::selection {
+    color: $lightest-navy;
+    background-color: $green;
+  }
+
+  ::-moz-selection {
+    color: $lightest-navy;
+    background-color: $green;
+  }
 }
 
 a {
