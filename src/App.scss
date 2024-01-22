@@ -15,4 +15,13 @@
       flex-basis: 50%;
     }
   }
+
+  @include for-desktop {
+    margin: unset;
+    padding: 5em 3em;
+
+    .main-content {
+      flex-direction: column;
+    }
+  }
 }
