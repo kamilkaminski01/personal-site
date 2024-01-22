@@ -1,0 +1,62 @@
+.experience-section {
+  margin-top: 9em;
+
+  .experience-section__tile {
+    display: flex;
+    gap: 1.5em;
+
+    .experience__time-frame{
+      white-space: nowrap;
+      color: $slate;
+      letter-spacing: 0.025em;
+      font-weight: 600;
+      font-size: 0.75em;
+      text-transform: uppercase;
+    }
+
+    .experience__content {
+      .experience__title {
+        gap: 0.25em;
+
+        font-weight: normal;
+        transition: color ease-in-out 0.1s;
+
+        .arrow-icon {
+          transform: translateY(3px);
+          transition: transform 0.1s ease-in-out;
+        }
+      }
+
+      .experience__desc {
+        margin: 0.75em 0;
+        line-height: 1.5;
+        font-size: 0.875em;
+        color: $slate;
+      }
+
+      .experience__tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+      }
+    }
+
+    &:hover {
+      .experience__content {
+        .experience__title {
+          color: $green;
+
+          .arrow-icon {
+            color: $green;
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+
+    @include for-phone {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  }
+}

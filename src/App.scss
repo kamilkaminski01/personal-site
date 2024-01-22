@@ -24,4 +24,8 @@
       flex-direction: column;
     }
   }
+
+  @include for-tablet {
+    padding: 3em 1.5em;
+  }
 }

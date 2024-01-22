@@ -21,7 +21,7 @@ nav {
       height: 1px;
       width: 2.5em;
       background-color: $slate;
-      transition: background-color, width ease-in-out 0.1s;
+      transition: background-color ease-in-out 0.1s, width ease-in-out 0.1s;
     }
 
     &:hover, &.active {
