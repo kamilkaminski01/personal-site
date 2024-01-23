@@ -9,4 +9,8 @@
       @include active-hover;
     }
   }
+
+  .about-section__header {
+    @include sticky-header
+  }
 }

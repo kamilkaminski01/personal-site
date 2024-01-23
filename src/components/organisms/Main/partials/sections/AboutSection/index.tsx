@@ -1,7 +1,10 @@
 import './style.scss'
 import { EXTERNAL_SITES } from 'utils/consts.ts'
+import useDesktop from 'hooks/useDesktop.ts'
 
 const AboutSection = () => {
+  const isDesktop = useDesktop()
+
   const renderLink = (url: string, text: string) => (
     <a className="paragraph__link" href={url} target="_blank" rel="noreferrer">
       {text}
@@ -10,6 +13,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="about-section">
+      {!isDesktop && <div className="about-section__header">About</div>}
       <p className="about-section__paragraph">
         In 2020, my journey with software development began, sparked by a fascination with Python.
         Fast-forward to today, and I&apos;ve had the privilege of building software for a{' '}

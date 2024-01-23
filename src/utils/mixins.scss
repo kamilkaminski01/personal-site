@@ -7,6 +7,17 @@
   }
 }
 
+@mixin sticky-header {
+  padding: 1.5em 0;
+  margin-bottom: 0.5em;
+
+  color: $white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+
 @mixin for-desktop {
   @media (max-width: 1024px) {
     @content;
