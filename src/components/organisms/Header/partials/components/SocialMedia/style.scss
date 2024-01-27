@@ -1,0 +1,16 @@
+.social-media {
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+
+  svg {
+    width: 28px;
+    height: 28px;
+    color: $slate;
+    transition: color ease-in-out 0.2s;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}

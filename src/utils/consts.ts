@@ -13,6 +13,12 @@ export const EXTERNAL_SITES = {
   grupazpr: 'https://www.grupazpr.pl/'
 }
 
+export const SOCIAL_MEDIA = {
+  github: 'https://github.com/kamilkaminski01',
+  linkedin: 'https://www.linkedin.com/in/kamilkaminski01/',
+  email: 'mailto:kamilkaminski39@gmail.com'
+}
+
 export const EXPERIENCE = [
   {
     timeFrame: 'Aug 2023 — Present',

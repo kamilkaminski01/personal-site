@@ -1,3 +1,4 @@
+import './style.scss'
 import AboutSection from './partials/sections/AboutSection'
 import ExperienceSection from './partials/sections/ExperienceSection'
 import Footer from 'components/molecules/Footer'
