@@ -1,0 +1,31 @@
+.archive-page {
+  padding: 6em 0;
+  width: 88%;
+
+  .archive-page__return {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    width: fit-content;
+    gap: 0.25em;
+
+    color: $green;
+    font-weight: 540;
+
+    svg {
+      height: 17px;
+      width: 17px;
+      transition: transform ease-in-out 0.1s;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(-5px);
+      }
+    }
+  }
+
+  .archive-page__title {
+    font-size: 3em;
+  }
+}
