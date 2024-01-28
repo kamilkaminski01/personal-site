@@ -1,10 +1,12 @@
 import MonitoringSystem from 'assets/images/monitoring-system.png'
+import JobBoard from 'assets/images/job-board.png'
 
 export const PATHS = {
   home: '/',
   about: '#about',
   experience: '#experience',
-  projects: '#projects'
+  projects: '#projects',
+  archive: '/archive'
 }
 
 export const EXTERNAL_SITES = {
@@ -57,6 +59,23 @@ export const PROJECTS = [
     title: 'Monitoring System',
     desc: 'Web app that allows users to interact within a chosen game. Authenticated users can observe the taken actions of users in a game and communicate with them through a chat in real-time and more.',
     techStack: ['Django Channels', 'Redis', 'React', 'SASS', 'PostgreSQL', 'Docker', 'AWS']
+  },
+  {
+    api: 'https://api.github.com/repos/kamilkaminski01/job-board',
+    img: JobBoard,
+    link: 'https://github.com/kamilkaminski01/job-board',
+    repo: 'https://github.com/kamilkaminski01/job-board',
+    title: 'Job Board',
+    desc: 'A recruitment platform aimed at the IT industry. It allows users to find a job and recruiters to advertise their job positions. Login with social authentication, apply and receive an email about successfully applying.',
+    techStack: [
+      'Django REST Framework',
+      'React',
+      'TypeScript',
+      'SASS',
+      'AWS SES',
+      'GitHub OAuth',
+      'Google OAuth 2.0'
+    ]
   }
 ]
 

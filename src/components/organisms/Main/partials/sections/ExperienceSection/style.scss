@@ -29,11 +29,16 @@
     .experience__content {
       width: 80%;
 
-      .experience__title {
-        @include tile__title;
+      .experience__link {
+        display: flex;
+        width: fit-content;
 
-        &:hover {
-          @include tile__title--hover;
+        .experience__title {
+          @include tile__title;
+
+          &:hover {
+            @include tile__title--hover;
+          }
         }
       }
 

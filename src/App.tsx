@@ -1,14 +1,16 @@
 import './App.scss'
-import Header from 'components/organisms/Header'
-import Main from 'components/organisms/Main'
+import HomePage from 'pages/HomePage'
+import { Route, Routes } from 'react-router-dom'
+import { PATHS } from 'utils/consts.ts'
+import ArchivePage from 'pages/ArchivePage'
 
 function App() {
   return (
     <div className="app">
-      <div className="main-content">
-        <Header />
-        <Main />
-      </div>
+      <Routes>
+        <Route path={PATHS.home} element={<HomePage />} />
+        <Route path={PATHS.archive} element={<ArchivePage />} />
+      </Routes>
     </div>
   )
 }

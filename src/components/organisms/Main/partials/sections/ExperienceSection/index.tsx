@@ -16,7 +16,11 @@ const ExperienceSection = () => {
         <Tile key={index} className="experience-section__tile">
           <div className="experience__time-frame">{experience.timeFrame}</div>
           <div className="experience__content">
-            <Link to={experience.link} target="_blank" rel="noreferrer">
+            <Link
+              to={experience.link}
+              target="_blank"
+              rel="noreferrer"
+              className="experience__link">
               <h4 className="experience__title">
                 {experience.title} <LuArrowUpRight className="arrow-icon" />
               </h4>

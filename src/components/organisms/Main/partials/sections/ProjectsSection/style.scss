@@ -23,11 +23,16 @@
     .project__content {
       width: 80%;
 
-      .project__title {
-        @include tile__title;
+      .project__link {
+        display: flex;
+        width: fit-content;
 
-        &:hover {
-          @include tile__title--hover;
+        .project__title {
+          @include tile__title;
+
+          &:hover {
+            @include tile__title--hover;
+          }
         }
       }
 
@@ -66,6 +71,12 @@
       }
     }
 
+    &:hover {
+      .project__image {
+        border-color: $dark-slate;
+      }
+    }
+
     @include for-desktop {
       gap: 3%;
 
@@ -80,6 +91,29 @@
 
       .project__image {
         width: 12.5em;
+      }
+    }
+  }
+
+  .projects-section__archive {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    width: fit-content;
+    border-bottom: 1px solid transparent;
+    transition: gap ease-in-out 0.1s, border-bottom ease-in-out 0.1s;
+
+    span {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      transition: border-color ease-in-out 0.1s;
+    }
+
+    &:hover {
+      gap: 0.75em;
+
+      span {
+        border-color: $green;
       }
     }
   }

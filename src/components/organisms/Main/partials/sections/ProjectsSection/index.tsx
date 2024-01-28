@@ -8,6 +8,8 @@ import { FaStar } from 'react-icons/fa'
 import { BiGitRepoForked } from 'react-icons/bi'
 import { RxEyeOpen } from 'react-icons/rx'
 import useProjects from 'hooks/useProjects.ts'
+import { GoArrowRight } from 'react-icons/go'
+import { PATHS } from 'utils/consts.ts'
 
 const ProjectsSection = () => {
   const isDesktop = useDesktop()
@@ -51,6 +53,9 @@ const ProjectsSection = () => {
           </div>
         </Tile>
       ))}
+      <Link to={PATHS.archive} className="projects-section__archive">
+        <span>View Full Project Archive</span> <GoArrowRight />
+      </Link>
     </section>
   )
 }
