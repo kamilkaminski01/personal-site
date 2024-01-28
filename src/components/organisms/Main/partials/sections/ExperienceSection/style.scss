@@ -2,7 +2,7 @@
   margin-top: 9em;
 
   .experience-section__header {
-    @include sticky-header
+    @include sticky-header;
   }
 
   .experience-section__tile {
@@ -14,7 +14,6 @@
       width: 35%;
       color: $slate;
       letter-spacing: 0.025em;
-      font-weight: 600;
       font-size: 0.75em;
       text-transform: uppercase;
 
@@ -31,13 +30,10 @@
       width: 80%;
 
       .experience__title {
-        margin-top: -1.5px;
-        font-weight: normal;
-        transition: color ease-in-out 0.1s;
+        @include tile__title;
 
-        .arrow-icon {
-          transform: translateY(3px);
-          transition: transform 0.1s ease-in-out;
+        &:hover {
+          @include tile__title--hover;
         }
       }
 
@@ -47,34 +43,15 @@
       }
 
       .experience__desc {
-        margin: 0.5em 0;
-        line-height: 1.5;
-        font-size: 0.875em;
-        color: $slate;
+        @include tile__desc;
       }
 
       .experience__tech-stack {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5em;
-        margin-top: 1em;
+        @include tile__tech-stack;
       }
 
       @include for-phone {
         width: unset;
-      }
-    }
-
-    &:hover {
-      .experience__content {
-        .experience__title {
-          color: $green;
-
-          .arrow-icon {
-            color: $green;
-            transform: translateX(5px);
-          }
-        }
       }
     }
 

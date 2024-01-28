@@ -1,3 +1,5 @@
+import MonitoringSystem from 'assets/images/monitoring-system.png'
+
 export const PATHS = {
   home: '/',
   about: '#about',
@@ -43,6 +45,18 @@ export const EXPERIENCE = [
     workType: 'Practices',
     desc: 'Successfully developed and shipped a web scraping project in order to extract relevant data for analysis and decision-making purposes.',
     techStack: ['Python', 'BeautifulSoup4', 'Pandas', 'MySQL']
+  }
+]
+
+export const PROJECTS = [
+  {
+    api: 'https://api.github.com/repos/kamilkaminski01/monitoring-system',
+    img: MonitoringSystem,
+    link: 'https://monitoring-system.app/',
+    repo: 'https://github.com/kamilkaminski01/monitoring-system',
+    title: 'Monitoring System',
+    desc: 'Web app that allows users to interact within a chosen game. Authenticated users can observe the taken actions of users in a game and communicate with them through a chat in real-time and more.',
+    techStack: ['Django Channels', 'Redis', 'React', 'SASS', 'PostgreSQL', 'Docker', 'AWS']
   }
 ]
 

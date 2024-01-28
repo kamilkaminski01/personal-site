@@ -1,0 +1,90 @@
+.projects-section {
+  margin-top: 9em;
+
+  .projects-section__header {
+    @include sticky-header;
+  }
+
+  .projects-section__tile {
+    display: flex;
+    align-items: flex-start;
+    gap: 6%;
+    margin-bottom: 4em;
+
+    .project__image {
+      width: 26%;
+      object-fit: contain;
+
+      border-radius: 0.25em;
+      border: 3px solid $lightest-navy;
+      transition: border-color ease-in-out 0.2s;
+    }
+
+    .project__content {
+      width: 80%;
+
+      .project__title {
+        @include tile__title;
+
+        &:hover {
+          @include tile__title--hover;
+        }
+      }
+
+      .project__desc {
+        @include tile__desc;
+      }
+
+      .project__stats {
+        display: flex;
+
+        .project__stat {
+          display: flex;
+          align-items: center;
+          gap: 0.2em;
+          padding-right: 1em;
+          font-size: 0.875em;
+          transition: color ease-in-out 0.1s;
+
+          svg {
+            width: 12px;
+            height: 12px;
+          }
+
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+
+      .project__tech-stack {
+        @include tile__tech-stack;
+      }
+
+      @include for-phone {
+        width: unset;
+      }
+    }
+
+    @include for-desktop {
+      gap: 3%;
+
+      .project__image {
+        width: 26.25%;
+      }
+    }
+
+    @include for-phone {
+      flex-direction: column-reverse;
+      gap: 1em;
+
+      .project__image {
+        width: 12.5em;
+      }
+    }
+  }
+
+  @include for-desktop {
+    margin-top: 4em;
+  }
+}

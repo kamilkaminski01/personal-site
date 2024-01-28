@@ -1,3 +1,22 @@
+@mixin for-desktop {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-phone {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+
 @mixin active-hover {
   color: $white;
   transition: color ease-in-out 0.1s;
@@ -16,22 +35,46 @@
   font-weight: bold;
   font-size: 0.875em;
   text-transform: uppercase;
-}
 
-@mixin for-desktop {
-  @media (max-width: 1024px) {
-    @content;
+  @include for-desktop{
+    position: sticky;
+    top: 0;
+
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(3px);
   }
 }
 
-@mixin for-tablet {
-  @media (max-width: 768px) {
-    @content;
+@mixin tile__title {
+  margin-top: -1.5px;
+  font-weight: normal;
+  transition: color ease-in-out 0.1s;
+
+  .arrow-icon {
+    transform: translateY(3px);
+    transition: transform 0.1s ease-in-out;
   }
 }
 
-@mixin for-phone {
-  @media (max-width: 640px) {
-    @content;
+@mixin tile__title--hover {
+  color: $green;
+
+  .arrow-icon {
+    color: $green;
+    transform: translateX(5px);
   }
+}
+
+@mixin tile__desc {
+  margin: 0.5em 0;
+  line-height: 1.5;
+  font-size: 0.875em;
+  color: $slate;
+}
+
+@mixin tile__tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1em;
 }
