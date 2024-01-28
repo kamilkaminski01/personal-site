@@ -79,6 +79,30 @@ export const PROJECTS = [
   }
 ]
 
+export const PROJECTS_ARCHIVE = [
+  {
+    year: 2023,
+    project: 'Emerson Collective',
+    madeAt: 'Upstatement',
+    builtWith: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
+    link: 'https://www.emersoncollective.com/'
+  },
+  {
+    year: 2023,
+    project: 'Harvard Business School Next.js Site',
+    madeAt: 'Upstatement',
+    builtWith: ['React', 'TypeScript', 'Next.js', 'Contentful'],
+    link: 'https://www.hbs.edu/'
+  },
+  {
+    year: 2023,
+    project: 'Harvard Business School Design System',
+    madeAt: 'Upstatement',
+    builtWith: ['Storybook', 'React', 'TypeScript'],
+    link: ''
+  }
+]
+
 export const MAX_WIDTH = {
   desktop: 1024
 }
