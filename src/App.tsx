@@ -1,6 +1,6 @@
 import './App.scss'
 import HomePage from 'pages/HomePage'
-import { Route, Routes } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { PATHS } from 'utils/consts.ts'
 import ArchivePage from 'pages/ArchivePage'
 
