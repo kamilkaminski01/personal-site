@@ -28,4 +28,8 @@
   .archive-page__title {
     font-size: 3em;
   }
+
+  @include for-phone {
+
+  }
 }
