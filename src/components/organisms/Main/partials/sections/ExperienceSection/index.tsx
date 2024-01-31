@@ -3,11 +3,12 @@ import Tile from 'components/atoms/Tile'
 import { LuArrowUpRight } from 'react-icons/lu'
 import { EXPERIENCE } from 'utils/consts.ts'
 import Label from 'components/atoms/Label'
-import useDesktop from 'hooks/useDesktop.ts'
+import useResize from 'hooks/useResize.ts'
 import { Link } from 'react-router-dom'
+import { MAX_WIDTH } from 'utils/consts.ts'
 
 const ExperienceSection = () => {
-  const isDesktop = useDesktop()
+  const isDesktop = useResize(MAX_WIDTH.desktop)
 
   return (
     <section id="experience" className="experience-section">

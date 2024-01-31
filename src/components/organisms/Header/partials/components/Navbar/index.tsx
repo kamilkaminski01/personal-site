@@ -2,11 +2,12 @@ import './style.scss'
 import classNames from 'classnames'
 import { Link, useLocation } from 'react-router-dom'
 import { PATHS } from 'utils/consts.ts'
-import useDesktop from 'hooks/useDesktop.ts'
+import useResize from 'hooks/useResize.ts'
+import { MAX_WIDTH } from 'utils/consts.ts'
 
 const Navbar = () => {
   const location = useLocation()
-  const isDesktop = useDesktop()
+  const isDesktop = useResize(MAX_WIDTH.desktop)
 
   return (
     isDesktop && (

@@ -81,28 +81,98 @@ export const PROJECTS = [
 
 export const PROJECTS_ARCHIVE = [
   {
-    year: 2023,
-    project: 'Emerson Collective',
-    madeAt: 'Upstatement',
-    builtWith: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
-    link: 'https://www.emersoncollective.com/'
+    year: 2024,
+    project: 'Personal Website',
+    madeAt: '',
+    builtWith: ['React', 'TypeScript', 'SASS', 'Vercel'],
+    link: 'https://kamilkaminski.pl/',
+    shorthandLink: 'kamilkaminski.pl'
+  },
+  {
+    year: 2024,
+    project: 'Murator Projekty - House Design Agency',
+    madeAt: 'Netstation',
+    builtWith: ['Python', 'Django', 'JavaScript', 'SASS', 'Docker'],
+    link: 'https://projekty.muratordom.pl/',
+    shorthandLink: 'projekty.muratordom.pl'
   },
   {
     year: 2023,
-    project: 'Harvard Business School Next.js Site',
-    madeAt: 'Upstatement',
-    builtWith: ['React', 'TypeScript', 'Next.js', 'Contentful'],
-    link: 'https://www.hbs.edu/'
+    project: 'IT Recruitment Platform',
+    madeAt: '',
+    builtWith: [
+      'Django REST Framework',
+      'React',
+      'TypeScript',
+      'Vite',
+      'SASS',
+      'AWS SES',
+      'Google OAuth 2',
+      'GitHub OAuth'
+    ],
+    link: 'https://github.com/kamilkaminski01/job-board',
+    shorthandLink: ''
   },
   {
     year: 2023,
-    project: 'Harvard Business School Design System',
-    madeAt: 'Upstatement',
-    builtWith: ['Storybook', 'React', 'TypeScript'],
-    link: ''
+    project: 'Super Express & Eska Automation Tasks',
+    madeAt: 'Netstation',
+    builtWith: ['Python', 'Flask', 'MySQL', 'Docker', 'K8s'],
+    link: 'https://www.grupazpr.pl/nasze-marki',
+    shorthandLink: 'grupazpr.pl/nasze-marki'
+  },
+  {
+    year: 2023,
+    project: 'Monitoring System',
+    madeAt: '',
+    builtWith: [
+      'Django REST Framework',
+      'Django Channels',
+      'Redis',
+      'React',
+      'SASS',
+      'PostgreSQL',
+      'Docker',
+      'AWS'
+    ],
+    link: 'https://monitoring-system.app/',
+    shorthandLink: 'monitoring-system.app'
+  },
+  {
+    year: 2023,
+    project: 'Development Forum',
+    madeAt: '',
+    builtWith: ['Django', 'HTML/CSS', 'Docker'],
+    link: 'https://github.com/kamilkaminski01/development-forum',
+    shorthandLink: ''
+  },
+  {
+    year: 2022,
+    project: 'Recommendations Platform',
+    madeAt: '',
+    builtWith: ['Django', 'Django REST Framework', 'React', 'PostgreSQL', 'Docker'],
+    link: 'https://github.com/kamilkaminski01/recommendations-system',
+    shorthandLink: ''
+  },
+  {
+    year: 2022,
+    project: 'LeadIn',
+    madeAt: 'BlueRider.Software',
+    builtWith: ['Python', 'Django', 'Django REST Framework', 'PostgreSQL', 'Docker', 'AWS'],
+    link: 'https://www.leadin.pl/',
+    shorthandLink: 'leadin.pl'
+  },
+  {
+    year: 2022,
+    project: 'Web Scraper/Crawler',
+    madeAt: 'BlueRider.Software',
+    builtWith: ['Python', 'BeatifulSoup4', 'Pandas', 'MySQL'],
+    link: 'https://github.com/kamilkaminski01/Crawler',
+    shorthandLink: ''
   }
 ]
 
 export const MAX_WIDTH = {
-  desktop: 1024
+  desktop: 1024,
+  phone: 640
 }
