@@ -1,9 +1,10 @@
 import './style.scss'
 import { EXTERNAL_SITES } from 'utils/consts.ts'
-import useDesktop from 'hooks/useDesktop.ts'
+import useResize from 'hooks/useResize.ts'
+import { MAX_WIDTH } from 'utils/consts.ts'
 
 const AboutSection = () => {
-  const isDesktop = useDesktop()
+  const isDesktop = useResize(MAX_WIDTH.desktop)
 
   const renderLink = (url: string, text: string) => (
     <a className="paragraph__link" href={url} target="_blank" rel="noreferrer">

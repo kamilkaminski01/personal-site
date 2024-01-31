@@ -1,5 +1,5 @@
 import './style.scss'
-import useDesktop from 'hooks/useDesktop.ts'
+import useResize from 'hooks/useResize.ts'
 import Tile from 'components/atoms/Tile'
 import { LuArrowUpRight } from 'react-icons/lu'
 import Label from 'components/atoms/Label'
@@ -10,9 +10,10 @@ import { RxEyeOpen } from 'react-icons/rx'
 import useProjects from 'hooks/useProjects.ts'
 import { GoArrowRight } from 'react-icons/go'
 import { PATHS } from 'utils/consts.ts'
+import { MAX_WIDTH } from 'utils/consts.ts'
 
 const ProjectsSection = () => {
-  const isDesktop = useDesktop()
+  const isDesktop = useResize(MAX_WIDTH.desktop)
   const projects = useProjects()
 
   return (

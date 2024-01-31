@@ -31,7 +31,7 @@
           @include tile__title;
 
           &:hover {
-            @include tile__title--hover;
+            @include title--hover;
           }
         }
       }

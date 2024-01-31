@@ -1,6 +1,5 @@
 .archive-page {
   padding: 6em 0;
-  width: 88%;
 
   .archive-page__return {
     display: flex;
@@ -29,7 +28,96 @@
     font-size: 3em;
   }
 
-  @include for-phone {
+  .archive-page__table {
+    width: 100%;
+    margin-top: 3em;
+    text-align: left;
+    border-collapse: collapse;
 
+    .table__header {
+      position: sticky;
+      top: 0;
+      font-size: 0.875em;
+      background-color: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(10px);
+      z-index: 1;
+
+      .table__header-row {
+        th {
+          padding: 1em 2em 1em 1px;
+        }
+      }
+    }
+
+    .table__row {
+      border-top: 1px solid rgba(203,213,225,.1);
+
+      td {
+        vertical-align: top;
+        padding: 16px 16px 16px 1px;
+      }
+
+      .cell__year,
+      .cell__made_at,
+      .cell__link {
+        font-size: 0.875em;
+        color: $slate;
+      }
+
+      .cell__link {
+        .link__shorthand {
+          @include arrow-icon;
+          display: flex;
+          width: fit-content;
+          gap: 0.25em;
+
+          span {
+            display: flex;
+            align-items: center;
+            gap: 0.3em;
+          }
+
+          &:hover {
+            @include title--hover;
+          }
+        }
+      }
+
+      .cell__project {
+        font-weight: 550;
+
+        .project__link {
+          transition: color ease-in-out 0.1s;
+
+          @include arrow-icon;
+
+          &:hover {
+            @include title--hover;
+          }
+        }
+      }
+
+      .cell__built_with {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 22em;
+
+        p {
+          padding: 0.25em 0.75em;
+          margin: 0.25em 0.375em 0.25em 0;
+        }
+      }
+    }
+  }
+
+  @include for-desktop {
+    width: 100%;
+    padding: unset;
+  }
+
+  @include for-phone {
+    .archive-page__title {
+      font-size: 2.25em;
+    }
   }
 }
