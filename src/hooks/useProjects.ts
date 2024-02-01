@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { PROJECTS } from 'utils/consts.ts'
 import { IProject } from 'models/project.ts'
 
@@ -14,9 +14,9 @@ const useProjects = () => {
             const data = await response.json()
             return {
               ...project,
-              stars: data.stargazers_count ? data.stargazers_count : null,
-              forks: data.forks ? data.forks : null,
-              watchers: data.watchers_count ? data.watchers_count : null
+              stars: data.stargazers_count || null,
+              forks: data.forks || null,
+              watchers: data.watchers_count || null
             }
           } catch (error) {
             console.error(`Error fetching GitHub stats for ${project.title}`, error)
@@ -30,7 +30,7 @@ const useProjects = () => {
     fetchGithubStats()
   }, [])
 
-  return projectsWithStats
+  return useMemo(() => projectsWithStats, [projectsWithStats])
 }
 
 export default useProjects
