@@ -1,0 +1,8 @@
+.mouse-gradient {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(600px at 0px 0px, rgba(29, 78, 216, 0.15), transparent 80%);
+
+  z-index: 2;
+  pointer-events: none;
+}
