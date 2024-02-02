@@ -3,9 +3,9 @@ import JobBoard from 'assets/images/job-board.png'
 
 export const PATHS = {
   home: '/',
-  about: '#about',
-  experience: '#experience',
-  projects: '#projects',
+  about: 'about',
+  experience: 'experience',
+  projects: 'projects',
   archive: '/archive'
 }
 
