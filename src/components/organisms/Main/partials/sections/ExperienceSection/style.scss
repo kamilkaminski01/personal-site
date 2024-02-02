@@ -51,6 +51,29 @@
         @include tile__desc;
       }
 
+      .experience__tags {
+        display: flex;
+        gap: 1em;
+        font-size: 0.875em;
+        margin: 1.25em 0;
+        width: fit-content;
+        flex-wrap: wrap;
+
+        .tag__link {
+          display: flex;
+          align-items: center;
+          transition: color ease-in-out 0.1s;
+
+          .link-icon {
+            margin-right: 4px;
+          }
+
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+
       .experience__tech-stack {
         @include tile__tech-stack;
       }

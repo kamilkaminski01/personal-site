@@ -30,6 +30,20 @@ export const EXPERIENCE = [
     workType: 'Full time',
     title: 'Software Developer · Netstation',
     desc: 'Deliver high-quality, robust production code for a diverse array of projects for clients including Super Express, Eska, Murator and more.',
+    tags: [
+      {
+        title: 'Super Express',
+        link: 'https://www.se.pl/'
+      },
+      {
+        title: 'Eska',
+        link: 'https://www.eska.pl/'
+      },
+      {
+        title: 'Murator',
+        link: 'https://projekty.muratordom.pl/'
+      }
+    ],
     techStack: ['Python', 'Django', 'Flask', 'JavaScript', 'HTML/SCSS', 'Docker', 'K8s']
   },
   {
