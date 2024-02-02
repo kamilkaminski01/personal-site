@@ -7,10 +7,10 @@ import { MAX_WIDTH } from 'utils/consts.ts'
 
 const Navbar = () => {
   const location = useLocation()
-  const isDesktop = useResize(MAX_WIDTH.desktop)
+  const isNotDesktop = useResize(MAX_WIDTH.desktop)
 
   return (
-    isDesktop && (
+    isNotDesktop && (
       <nav>
         <Link
           to={PATHS.about}
