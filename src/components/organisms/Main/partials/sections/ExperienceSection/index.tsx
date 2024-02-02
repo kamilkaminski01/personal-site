@@ -6,6 +6,7 @@ import Label from 'components/atoms/Label'
 import useResize from 'hooks/useResize.ts'
 import { Link } from 'react-router-dom'
 import { MAX_WIDTH } from 'utils/consts.ts'
+import { HiMiniLink } from 'react-icons/hi2'
 
 const ExperienceSection = () => {
   const isDesktop = useResize(MAX_WIDTH.desktop)
@@ -28,6 +29,20 @@ const ExperienceSection = () => {
             </Link>
             <p className="experience__work-type">{experience.workType}</p>
             <p className="experience__desc">{experience.desc}</p>
+            {experience.tags && (
+              <div className="experience__tags">
+                {experience.tags.map((tag, index) => (
+                  <Link
+                    to={tag.link}
+                    key={index}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="tag__link">
+                    <HiMiniLink className="link-icon" /> {tag.title}
+                  </Link>
+                ))}
+              </div>
+            )}
             <div className="experience__tech-stack">
               {experience.techStack.map((techStack, index) => (
                 <Label key={index} text={techStack} />
