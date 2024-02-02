@@ -28,8 +28,9 @@ const AboutSection = () => {
         over 5 full stack projects, developing my skills in Django, React, SASS, and AWS services.
       </p>
       <p className="about-section__paragraph">
-        Beyond the 9-to-5, I like diving into the latest trends and technologies to stay ahead of
-        the curve.
+        Apart from my regular work hours, I enjoy keeping up with the newest trends and technologies
+        to stay up-to-date. I&apos;m also in the final stages of completing my master&apos;s degree
+        in computer science.
       </p>
     </section>
   )
