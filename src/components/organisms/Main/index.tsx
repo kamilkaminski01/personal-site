@@ -3,6 +3,7 @@ import AboutSection from './partials/sections/AboutSection'
 import ExperienceSection from './partials/sections/ExperienceSection'
 import Footer from 'components/molecules/Footer'
 import ProjectsSection from './partials/sections/ProjectsSection'
+import EducationSection from './partials/sections/EducationSection'
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <AboutSection />
       <ExperienceSection />
       <ProjectsSection />
+      <EducationSection />
       <Footer />
     </main>
   )

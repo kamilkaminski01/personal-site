@@ -3,10 +3,11 @@ import JobBoard from 'assets/images/job-board.png'
 
 export const PATHS = {
   home: '/',
+  archive: '/archive',
   about: 'about',
   experience: 'experience',
   projects: 'projects',
-  archive: '/archive'
+  education: 'education'
 }
 
 export const EXTERNAL_SITES = {
@@ -183,6 +184,21 @@ export const PROJECTS_ARCHIVE = [
     builtWith: ['Python', 'BeatifulSoup4', 'Pandas', 'MySQL'],
     link: 'https://github.com/kamilkaminski01/Crawler',
     shorthandLink: ''
+  }
+]
+
+export const EDUCATION = [
+  {
+    timeFrame: '2023 — Present',
+    title: 'Computer Science · University of Bialystok',
+    link: 'https://informatyka.uwb.edu.pl/',
+    degree: "Master's degree"
+  },
+  {
+    timeFrame: '2020 — 2023',
+    title: 'Computer Science · University of Bialystok',
+    link: 'https://informatyka.uwb.edu.pl/',
+    degree: "Bachelor's degree"
   }
 ]
 

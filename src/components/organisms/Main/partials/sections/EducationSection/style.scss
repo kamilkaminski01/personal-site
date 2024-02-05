@@ -1,0 +1,36 @@
+.education-section {
+  @include main-section;
+
+  .education-section__header {
+    @include sticky-header;
+  }
+
+  .education-section__tile {
+    @include main-section__tile;
+
+    .education__time-frame {
+      @include tile__time-frame;
+    }
+
+    .education__content {
+      width: 80%;
+
+      .education__link {
+        display: flex;
+        width: fit-content;
+
+        .education__title {
+          @include tile__title;
+
+          &:hover {
+            @include title--hover;
+          }
+        }
+      }
+
+      .education__degree {
+        @include tile__subtitle;
+      }
+    }
+  }
+}

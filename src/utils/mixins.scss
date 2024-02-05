@@ -16,6 +16,46 @@
   }
 }
 
+@mixin main-section {
+  margin-top: 9em;
+
+  @include for-desktop {
+    margin-top: 4em;
+  }
+}
+
+@mixin main-section__tile {
+  display: flex;
+  gap: 3%;
+  margin-bottom: 4em;
+
+  @include for-phone {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+@mixin tile__subtitle {
+  color: $dark-slate;
+  margin-top: 0.25em;
+}
+
+@mixin tile__time-frame {
+  width: 35%;
+  color: $slate;
+  letter-spacing: 0.025em;
+  font-size: 0.75em;
+  text-transform: uppercase;
+
+  @include for-desktop {
+    width: 30%;
+  }
+
+  @include for-phone {
+    width: fit-content;
+  }
+}
+
 
 @mixin active-hover {
   color: $white;
