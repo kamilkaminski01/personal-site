@@ -19,6 +19,10 @@
 @mixin main-section {
   margin-top: 9em;
 
+  .section__header {
+    @include sticky-header;
+  }
+
   @include for-desktop {
     margin-top: 4em;
   }
@@ -28,6 +32,22 @@
   display: flex;
   gap: 3%;
   margin-bottom: 4em;
+
+  @include tile__content;
+
+  .tile__time-frame{
+    @include tile__time-frame;
+  }
+
+  .tile__image {
+    @include tile__image;
+  }
+
+  &:hover {
+    .tile__image {
+      border-color: $dark-slate;
+    }
+  }
 
   @include for-phone {
     flex-direction: column;
@@ -56,6 +76,14 @@
   }
 }
 
+@mixin tile__image {
+  width: 26%;
+  object-fit: contain;
+
+  border-radius: 0.25em;
+  border: 3px solid $lightest-navy;
+  transition: border-color ease-in-out 0.2s;
+}
 
 @mixin active-hover {
   color: $white;
@@ -98,6 +126,48 @@
   }
 }
 
+@mixin tile__content {
+  .tile__content {
+    width: 80%;
+
+    .tile__link {
+      display: flex;
+      width: fit-content;
+
+      .tile__title {
+        @include tile__title;
+        &:hover {
+          @include title--hover;
+        }
+      }
+    }
+
+    .tile__subtitle {
+      @include tile__subtitle;
+    }
+
+    .tile__desc {
+      @include tile__desc;
+    }
+
+    .tile__stats {
+      @include tile__stats;
+    }
+
+    .tile__tags {
+      @include tile__tags;
+    }
+
+    .tile__tech-stack {
+      @include tile__tech-stack;
+    }
+
+    @include for-phone {
+      width: unset;
+    }
+  }
+}
+
 @mixin tile__title {
   width: fit-content;
   margin-top: -1.5px;
@@ -121,6 +191,52 @@
   line-height: 1.5;
   font-size: 0.875em;
   color: $slate;
+}
+
+@mixin tile__stats {
+  display: flex;
+  margin: 0.75em 0;
+
+  .tile__stat {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    padding-right: 1em;
+    font-size: 0.875em;
+    transition: color ease-in-out 0.1s;
+
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+@mixin tile__tags {
+  display: flex;
+  gap: 1em;
+  font-size: 0.875em;
+  margin: 1.5em 0;
+  width: fit-content;
+  flex-wrap: wrap;
+
+  .tag__link {
+    display: flex;
+    align-items: center;
+    transition: color ease-in-out 0.1s;
+
+    .link-icon {
+      margin-right: 4px;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
 }
 
 @mixin tile__tech-stack {

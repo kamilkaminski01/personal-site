@@ -9,28 +9,24 @@ import { MAX_WIDTH } from 'utils/consts.ts'
 import { HiMiniLink } from 'react-icons/hi2'
 
 const ExperienceSection = () => {
-  const isDesktop = useResize(MAX_WIDTH.desktop)
+  const isNotDesktop = useResize(MAX_WIDTH.desktop)
 
   return (
     <section id="experience" className="experience-section">
-      {!isDesktop && <div className="experience-section__header">Experience</div>}
+      {!isNotDesktop && <div className="section__header">Experience</div>}
       {EXPERIENCE.map((experience, index) => (
-        <Tile key={index} className="experience-section__tile">
-          <div className="experience__time-frame">{experience.timeFrame}</div>
-          <div className="experience__content">
-            <Link
-              to={experience.link}
-              target="_blank"
-              rel="noreferrer"
-              className="experience__link">
-              <h4 className="experience__title">
+        <Tile key={index}>
+          <div className="tile__time-frame">{experience.timeFrame}</div>
+          <div className="tile__content">
+            <Link to={experience.link} target="_blank" rel="noreferrer" className="tile__link">
+              <h4 className="tile__title">
                 {experience.title} <LuArrowUpRight className="arrow-icon" />
               </h4>
             </Link>
-            <p className="experience__work-type">{experience.workType}</p>
-            <p className="experience__desc">{experience.desc}</p>
+            <p className="tile__subtitle">{experience.workType}</p>
+            <p className="tile__desc">{experience.desc}</p>
             {experience.tags && (
-              <div className="experience__tags">
+              <div className="tile__tags">
                 {experience.tags.map((tag, index) => (
                   <Link
                     to={tag.link}
@@ -43,7 +39,7 @@ const ExperienceSection = () => {
                 ))}
               </div>
             )}
-            <div className="experience__tech-stack">
+            <div className="tile__tech-stack">
               {experience.techStack.map((techStack, index) => (
                 <Label key={index} text={techStack} />
               ))}

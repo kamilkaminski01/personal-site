@@ -18,35 +18,35 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="projects-section">
-      {!isDesktop && <div className="projects-section__header">Projects</div>}
+      {!isDesktop && <div className="section__header">Projects</div>}
       {projects.map((project, index) => (
-        <Tile key={index} className="projects-section__tile">
-          <img src={project.img} alt={project.title} className="project__image" />
-          <div className="project__content">
-            <Link to={project.link} target="_blank" rel="noreferrer" className="project__link">
-              <h4 className="project__title">
+        <Tile key={index}>
+          <img src={project.img} alt={project.title} className="tile__image" />
+          <div className="tile__content">
+            <Link to={project.link} target="_blank" rel="noreferrer" className="tile__link">
+              <h4 className="tile__title">
                 {project.title} <LuArrowUpRight className="arrow-icon" />
               </h4>
             </Link>
-            <p className="project__desc">{project.desc}</p>
-            <div className="project__stats">
+            <p className="tile__desc">{project.desc}</p>
+            <div className="tile__stats">
               {project.stars && (
-                <Link to={project.repo} className="project__stat">
+                <Link to={project.repo} className="tile__stat">
                   <FaStar /> {project.stars}
                 </Link>
               )}
               {project.forks && (
-                <Link to={project.repo} className="project__stat">
+                <Link to={project.repo} className="tile__stat">
                   <BiGitRepoForked /> {project.forks}
                 </Link>
               )}
               {project.watchers && (
-                <Link to={project.repo} className="project__stat">
+                <Link to={project.repo} className="tile__stat">
                   <RxEyeOpen /> {project.watchers}
                 </Link>
               )}
             </div>
-            <div className="project__tech-stack">
+            <div className="tile__tech-stack">
               {project.techStack.map((techStack, index) => (
                 <Label key={index} text={techStack} />
               ))}

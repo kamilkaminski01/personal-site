@@ -10,17 +10,17 @@ const EducationSection = () => {
 
   return (
     <section id="education" className="education-section">
-      {!isDesktop && <div className="education-section__header">Education</div>}
+      {!isDesktop && <div className="section__header">Education</div>}
       {EDUCATION.map((education, index) => (
-        <Tile key={index} className="education-section__tile">
-          <div className="education__time-frame">{education.timeFrame}</div>
-          <div className="education__content">
-            <Link to={education.link} target="_blank" rel="noreferrer" className="education__link">
-              <h4 className="education__title">
+        <Tile key={index}>
+          <div className="tile__time-frame">{education.timeFrame}</div>
+          <div className="tile__content">
+            <Link to={education.link} target="_blank" rel="noreferrer" className="tile__link">
+              <h4 className="tile__title">
                 {education.title} <LuArrowUpRight className="arrow-icon" />
               </h4>
             </Link>
-            <p className="education__degree">{education.degree}</p>
+            <p className="tile__subtitle">{education.degree}</p>
           </div>
         </Tile>
       ))}
