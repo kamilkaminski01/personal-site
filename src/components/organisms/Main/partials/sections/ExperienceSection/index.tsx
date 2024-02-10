@@ -15,7 +15,7 @@ const ExperienceSection = () => {
     <section id="experience" className="experience-section">
       {!isNotDesktop && <div className="section__header">Experience</div>}
       {EXPERIENCE.map((experience, index) => (
-        <Tile key={index}>
+        <Tile key={index} link={experience.link}>
           <div className="tile__time-frame">{experience.timeFrame}</div>
           <div className="tile__content">
             <Link to={experience.link} target="_blank" rel="noreferrer" className="tile__link">

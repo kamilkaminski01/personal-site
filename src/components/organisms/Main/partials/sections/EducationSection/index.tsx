@@ -12,7 +12,7 @@ const EducationSection = () => {
     <section id="education" className="education-section">
       {!isDesktop && <div className="section__header">Education</div>}
       {EDUCATION.map((education, index) => (
-        <Tile key={index}>
+        <Tile key={index} link={education.link}>
           <div className="tile__time-frame">{education.timeFrame}</div>
           <div className="tile__content">
             <Link to={education.link} target="_blank" rel="noreferrer" className="tile__link">

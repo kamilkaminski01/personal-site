@@ -20,7 +20,7 @@ const ProjectsSection = () => {
     <section id="projects" className="projects-section">
       {!isDesktop && <div className="section__header">Projects</div>}
       {projects.map((project, index) => (
-        <Tile key={index}>
+        <Tile key={index} link={project.link}>
           <img src={project.img} alt={project.title} className="tile__image" />
           <div className="tile__content">
             <Link to={project.link} target="_blank" rel="noreferrer" className="tile__link">
