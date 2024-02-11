@@ -2,9 +2,10 @@
   @include main-section;
 
   .tile {
-    .tile__hover {
-      padding: 1em 1em 1.25em 1em;
-      inset: -40% -5%;
+    .tile--hover {
+      width: 105%;
+      height: 200%;
+      inset: -50% -5%;
     }
   }
 }
