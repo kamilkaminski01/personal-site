@@ -1,3 +1,9 @@
+@mixin default {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
 @mixin for-desktop {
   @media (max-width: 1024px) {
     @content;
@@ -16,7 +22,7 @@
   }
 }
 
-@mixin main-section {
+@mixin main__section {
   margin-top: 9em;
 
   .section__header {
@@ -26,12 +32,37 @@
   @include for-desktop {
     margin-top: 4em;
   }
+
+  @include default {
+    &:hover {
+      .tile {
+        opacity: 0.45;
+      }
+
+      .tile:hover {
+        opacity: 1.0;
+      }
+    }
+  }
 }
 
-@mixin main-section__tile {
+@mixin section__tile {
+  position: relative;
   display: flex;
   gap: 3%;
   margin-bottom: 4em;
+  transition: opacity ease-in-out 0.1s;
+
+  .tile--hover {
+    position: absolute;
+    inset: -10% -5%;
+    border-radius: 0.5em;
+    width: 110%;
+    height: 120%;
+    transition:
+      background-color ease-in-out 0.2s,
+      box-shadow ease-in-out 0.2s;
+  }
 
   @include tile__content;
 
@@ -44,6 +75,11 @@
   }
 
   &:hover {
+    .tile--hover {
+      box-shadow: inset 0 1px 0 0 rgba(148, 163, 184, 0.1);
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
     .tile__image {
       border-color: $dark-slate;
     }
@@ -55,12 +91,8 @@
   }
 }
 
-@mixin tile__subtitle {
-  color: $dark-slate;
-  margin-top: 0.25em;
-}
-
 @mixin tile__time-frame {
+  position: relative;
   width: 35%;
   color: $slate;
   letter-spacing: 0.025em;
@@ -169,6 +201,7 @@
 }
 
 @mixin tile__title {
+  position: relative;
   width: fit-content;
   margin-top: -1.5px;
   font-weight: normal;
@@ -186,7 +219,14 @@
   }
 }
 
+@mixin tile__subtitle {
+  position: relative;
+  color: $dark-slate;
+  margin-top: 0.25em;
+}
+
 @mixin tile__desc {
+  position: relative;
   margin: 0.5em 0;
   line-height: 1.5;
   font-size: 0.875em;
@@ -194,8 +234,10 @@
 }
 
 @mixin tile__stats {
+  position: relative;
   display: flex;
   margin: 0.75em 0;
+  width: fit-content;
 
   .tile__stat {
     display: flex;
@@ -217,6 +259,7 @@
 }
 
 @mixin tile__tags {
+  position: relative;
   display: flex;
   gap: 1em;
   font-size: 0.875em;
@@ -240,6 +283,7 @@
 }
 
 @mixin tile__tech-stack {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
