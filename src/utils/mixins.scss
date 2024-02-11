@@ -1,3 +1,9 @@
+@mixin default {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
 @mixin for-desktop {
   @media (max-width: 1024px) {
     @content;
@@ -16,7 +22,7 @@
   }
 }
 
-@mixin main-section {
+@mixin main__section {
   margin-top: 9em;
 
   .section__header {
@@ -26,13 +32,26 @@
   @include for-desktop {
     margin-top: 4em;
   }
+
+  @include default {
+    &:hover {
+      .tile {
+        opacity: 0.45;
+      }
+
+      .tile:hover {
+        opacity: 1.0;
+      }
+    }
+  }
 }
 
-@mixin main-section__tile {
+@mixin section__tile {
   position: relative;
   display: flex;
   gap: 3%;
   margin-bottom: 4em;
+  transition: opacity ease-in-out 0.1s;
 
   .tile--hover {
     position: absolute;
