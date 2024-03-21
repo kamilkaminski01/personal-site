@@ -1,5 +1,6 @@
 import MonitoringSystem from 'assets/images/monitoring-system.png'
 import JobBoard from 'assets/images/job-board.png'
+import School from 'assets/images/school.png'
 
 export const PATHS = {
   home: '/',
@@ -67,12 +68,21 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    api: 'https://api.github.com/repos/kamilkaminski01/school',
+    img: School,
+    link: 'https://school.kamilkaminski.pl/',
+    repo: 'https://github.com/kamilkaminski01/school',
+    title: 'School Kamil Kamiński',
+    desc: 'Education resources for web developers created by myself. Blog posts, step-by-step tutorials, code examples and more.',
+    techStack: ['Vue', 'TypeScript', 'SASS', 'Vercel']
+  },
+  {
     api: 'https://api.github.com/repos/kamilkaminski01/monitoring-system',
     img: MonitoringSystem,
     link: 'https://monitoring-system.app/',
     repo: 'https://github.com/kamilkaminski01/monitoring-system',
     title: 'Monitoring System',
-    desc: 'Web app that allows users to interact within a chosen game. Authenticated users can observe the taken actions of users in a game and communicate with them through a chat in real-time and more.',
+    desc: 'Web app that allows users to interact within a chosen game. Authenticated users can observe the taken actions of users in a game and communicate with them through a chat in real-time.',
     techStack: ['Django Channels', 'Redis', 'React', 'SASS', 'PostgreSQL', 'Docker', 'AWS']
   },
   {
@@ -95,6 +105,14 @@ export const PROJECTS = [
 ]
 
 export const PROJECTS_ARCHIVE = [
+  {
+    year: 2024,
+    project: 'School Kamil Kamiński',
+    madeAt: '',
+    builtWith: ['Vue', 'TypeScript', 'SASS', 'Vercel'],
+    link: 'https://school.kamilkaminski.pl/',
+    shorthandLink: 'school.kamilkaminski.pl'
+  },
   {
     year: 2024,
     project: 'Personal Website',

@@ -22,27 +22,28 @@
       }
     }
   }
+}
 
-  .projects-section__archive {
-    display: flex;
-    align-items: center;
-    gap: 0.25em;
-    width: fit-content;
+.projects__archive {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  width: fit-content;
+  border-bottom: 1px solid transparent;
+  transition:
+    gap ease-in-out 0.1s,
+    border-bottom ease-in-out 0.1s;
+
+  span {
     border-bottom: 1px solid transparent;
-    transition: gap ease-in-out 0.1s, border-bottom ease-in-out 0.1s;
+    transition: border-color ease-in-out 0.1s;
+  }
+
+  &:hover {
+    gap: 0.75em;
 
     span {
-      padding-bottom: 2px;
-      border-bottom: 1px solid transparent;
-      transition: border-color ease-in-out 0.1s;
-    }
-
-    &:hover {
-      gap: 0.75em;
-
-      span {
-        border-color: $green;
-      }
+      border-color: $green;
     }
   }
 }

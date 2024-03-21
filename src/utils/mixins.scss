@@ -81,7 +81,7 @@
     }
 
     .tile__image {
-      border-color: $dark-slate;
+      border-color: rgba(226, 232, 240, 0.3);
     }
   }
 
@@ -113,7 +113,7 @@
   object-fit: contain;
 
   border-radius: 0.25em;
-  border: 3px solid $lightest-navy;
+  border: 3px solid rgba(226, 232, 240, 0.1);
   transition: border-color ease-in-out 0.2s;
 }
 

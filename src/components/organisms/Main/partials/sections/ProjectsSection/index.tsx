@@ -1,5 +1,5 @@
 import './style.scss'
-import useResize from 'hooks/useResize.ts'
+import useResize from 'hooks/useResize'
 import Tile from 'components/atoms/Tile'
 import { LuArrowUpRight } from 'react-icons/lu'
 import Label from 'components/atoms/Label'
@@ -7,57 +7,58 @@ import { Link } from 'react-router-dom'
 import { FaStar } from 'react-icons/fa'
 import { BiGitRepoForked } from 'react-icons/bi'
 import { RxEyeOpen } from 'react-icons/rx'
-import useProjects from 'hooks/useProjects.ts'
+import useGitHubStats from 'hooks/useGitHubStats'
 import { GoArrowRight } from 'react-icons/go'
-import { PATHS } from 'utils/consts.ts'
-import { MAX_WIDTH } from 'utils/consts.ts'
+import { PATHS, PROJECTS, MAX_WIDTH } from 'utils/consts'
 
 const ProjectsSection = () => {
   const isDesktop = useResize(MAX_WIDTH.desktop)
-  const projects = useProjects()
+  const { projectsGitHubStats } = useGitHubStats()
 
   return (
-    <section id="projects" className="projects-section">
-      {!isDesktop && <div className="section__header">Projects</div>}
-      {projects.map((project, index) => (
-        <Tile key={index}>
-          <img src={project.img} alt={project.title} className="tile__image" />
-          <div className="tile__content">
-            <Link to={project.link} target="_blank" rel="noreferrer" className="tile__link">
-              <h4 className="tile__title">
-                {project.title} <LuArrowUpRight className="arrow-icon" />
-              </h4>
-            </Link>
-            <p className="tile__desc">{project.desc}</p>
-            <div className="tile__stats">
-              {project.stars && (
-                <Link to={project.repo} className="tile__stat">
-                  <FaStar /> {project.stars}
-                </Link>
-              )}
-              {project.forks && (
-                <Link to={project.repo} className="tile__stat">
-                  <BiGitRepoForked /> {project.forks}
-                </Link>
-              )}
-              {project.watchers && (
-                <Link to={project.repo} className="tile__stat">
-                  <RxEyeOpen /> {project.watchers}
-                </Link>
-              )}
+    <>
+      <section id="projects" className="projects-section">
+        {!isDesktop && <div className="section__header">Projects</div>}
+        {PROJECTS.map((project, index) => (
+          <Tile key={index}>
+            <img src={project.img} alt={project.title} className="tile__image" />
+            <div className="tile__content">
+              <Link to={project.link} target="_blank" rel="noreferrer" className="tile__link">
+                <h4 className="tile__title">
+                  {project.title} <LuArrowUpRight className="arrow-icon" />
+                </h4>
+              </Link>
+              <p className="tile__desc">{project.desc}</p>
+              <div className="tile__stats">
+                {projectsGitHubStats[index] && projectsGitHubStats[index].stars && (
+                  <Link to={project.repo} className="tile__stat">
+                    <FaStar /> {projectsGitHubStats[index].stars}
+                  </Link>
+                )}
+                {projectsGitHubStats[index] && projectsGitHubStats[index].forks && (
+                  <Link to={project.repo} className="tile__stat">
+                    <BiGitRepoForked /> {projectsGitHubStats[index].forks}
+                  </Link>
+                )}
+                {projectsGitHubStats[index] && projectsGitHubStats[index].watchers && (
+                  <Link to={project.repo} className="tile__stat">
+                    <RxEyeOpen /> {projectsGitHubStats[index].watchers}
+                  </Link>
+                )}
+              </div>
+              <div className="tile__tech-stack">
+                {project.techStack.map((techStack, index) => (
+                  <Label key={index} text={techStack} />
+                ))}
+              </div>
             </div>
-            <div className="tile__tech-stack">
-              {project.techStack.map((techStack, index) => (
-                <Label key={index} text={techStack} />
-              ))}
-            </div>
-          </div>
-        </Tile>
-      ))}
-      <Link to={PATHS.archive} className="projects-section__archive">
+          </Tile>
+        ))}
+      </section>
+      <Link to={PATHS.archive} className="projects__archive">
         <span>View Full Project Archive</span> <GoArrowRight />
       </Link>
-    </section>
+    </>
   )
 }
 
