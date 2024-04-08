@@ -31,17 +31,17 @@ const ProjectsSection = () => {
               <p className="tile__desc">{project.desc}</p>
               <div className="tile__stats">
                 {projectsGitHubStats[index] && projectsGitHubStats[index].stars && (
-                  <Link to={project.repo} className="tile__stat">
+                  <Link to={project.repo} target="_blank" rel="noreferrer" className="tile__stat">
                     <FaStar /> {projectsGitHubStats[index].stars}
                   </Link>
                 )}
                 {projectsGitHubStats[index] && projectsGitHubStats[index].forks && (
-                  <Link to={project.repo} className="tile__stat">
+                  <Link to={project.repo} target="_blank" rel="noreferrer" className="tile__stat">
                     <BiGitRepoForked /> {projectsGitHubStats[index].forks}
                   </Link>
                 )}
                 {projectsGitHubStats[index] && projectsGitHubStats[index].watchers && (
-                  <Link to={project.repo} className="tile__stat">
+                  <Link to={project.repo} target="_blank" rel="noreferrer" className="tile__stat">
                     <RxEyeOpen /> {projectsGitHubStats[index].watchers}
                   </Link>
                 )}
