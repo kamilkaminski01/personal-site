@@ -107,6 +107,14 @@ export const PROJECTS = [
 export const PROJECTS_ARCHIVE = [
   {
     year: 2024,
+    project: 'Events Manager',
+    madeAt: '',
+    builtWith: ['Python', 'Flask', 'SQLAlchemy', 'React', 'TypeScript', 'SCSS'],
+    link: 'https://github.com/kamilkaminski01/events-manager',
+    shorthandLink: ''
+  },
+  {
+    year: 2024,
     project: 'School Kamil Kamiński',
     madeAt: '',
     builtWith: ['Vue', 'TypeScript', 'SASS', 'Vercel'],
