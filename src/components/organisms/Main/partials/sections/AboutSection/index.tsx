@@ -23,9 +23,9 @@ const AboutSection = () => {
         {renderLink(EXTERNAL_SITES.grupazpr, 'media brands')}.
       </p>
       <p className="about-section__paragraph">
-        My main focus these days is building products at{' '}
-        {renderLink(EXTERNAL_SITES.netstation, 'Netstation')}. In my free time I create full stack
-        projects, developing my skills in Django, React, SASS, and AWS services.
+        My main focus these days is building products for employees at{' '}
+        {renderLink(EXTERNAL_SITES.inpost, 'InPost')}. In my free time I create full stack projects
+        developing my skills in Flask, FastAPI, React, and DevOps methodologies.
       </p>
       <p className="about-section__paragraph">
         Apart from my regular work hours, I enjoy keeping up with the newest trends and technologies

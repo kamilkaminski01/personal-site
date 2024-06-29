@@ -8,7 +8,7 @@ const TitleSection = () => {
       <h1 className="title-section__title">
         <Link to={PATHS.home}>Kamil Kamiński</Link>
       </h1>
-      <h2 className="title-section__subtitle">Software Developer at Netstation</h2>
+      <h2 className="title-section__subtitle">Software Engineer at InPost</h2>
       <p className="title-section__desc">Passionate about creating robust web applications.</p>
     </section>
   )

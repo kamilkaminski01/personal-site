@@ -16,7 +16,8 @@ export const EXTERNAL_SITES = {
   leadin: 'https://www.leadin.pl/',
   bluerider: 'https://bluerider.software/',
   murator: 'https://projekty.muratordom.pl/',
-  grupazpr: 'https://www.grupazpr.pl/'
+  grupazpr: 'https://www.grupazpr.pl/',
+  inpost: 'https://inpost.pl/'
 }
 
 export const SOCIAL_MEDIA = {
@@ -27,7 +28,15 @@ export const SOCIAL_MEDIA = {
 
 export const EXPERIENCE = [
   {
-    timeFrame: 'Aug 2023 — Present',
+    timeFrame: 'Jul 2024 — Present',
+    link: EXTERNAL_SITES.inpost,
+    workType: 'Full time',
+    title: 'Software Engineer · InPost',
+    desc: 'Build and maintain tools for InPost employees, ensuring integration of backend and frontend technologies to enhance operational efficiency.',
+    techStack: ['Python', 'Flask', 'FastAPI', 'TypeScript', 'React']
+  },
+  {
+    timeFrame: 'Aug 2023 — Jun 2024',
     link: EXTERNAL_SITES.netstation,
     workType: 'Full time',
     title: 'Software Developer · Netstation',
@@ -52,7 +61,7 @@ export const EXPERIENCE = [
     timeFrame: 'Sept — Oct 2022',
     link: EXTERNAL_SITES.bluerider,
     title: 'Python Developer · BlueRider.Software',
-    workType: 'Intern',
+    workType: 'Internship',
     desc: 'Worked on an MVP of a recommendations platform for a start-up. Additionally, gained hands-on experience with containerization using Docker and deployment on AWS infrastructure.',
     techStack: ['Python', 'Django', 'Django REST Framework', 'PostgreSQL', 'Docker', 'AWS']
   },
@@ -60,7 +69,7 @@ export const EXPERIENCE = [
     timeFrame: 'July — Aug 2022',
     link: EXTERNAL_SITES.bluerider,
     title: 'Python Developer · BlueRider.Software',
-    workType: 'Practices',
+    workType: 'Apprenticeship',
     desc: 'Successfully developed and shipped a web scraping project in order to extract relevant data for analysis and decision-making purposes.',
     techStack: ['Python', 'BeautifulSoup4', 'Pandas', 'MySQL']
   }
