@@ -119,8 +119,8 @@ export const PROJECTS_ARCHIVE = [
     project: 'Events Manager',
     madeAt: '',
     builtWith: ['Python', 'Flask', 'SQLAlchemy', 'React', 'TypeScript', 'SCSS'],
-    link: 'https://github.com/kamilkaminski01/events-manager',
-    shorthandLink: ''
+    link: 'https://events-manager.kamilkaminski.pl/',
+    shorthandLink: 'events-manager.kamilkaminski.pl'
   },
   {
     year: 2024,

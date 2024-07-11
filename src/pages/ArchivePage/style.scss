@@ -70,6 +70,7 @@
           display: flex;
           width: fit-content;
           gap: 0.25em;
+          white-space: nowrap;
 
           span {
             display: flex;
@@ -104,7 +105,8 @@
         max-width: 22em;
 
         p {
-          padding: 0.25em 0.75em;
+          white-space: nowrap;
+          padding: 0.4em 0.8em;
           margin: 0.25em 0.375em 0.25em 0;
         }
       }
