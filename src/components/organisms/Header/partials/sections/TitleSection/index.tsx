@@ -1,6 +1,6 @@
 import './style.scss'
 import { Link } from 'react-router-dom'
-import { PATHS } from 'utils/consts.ts'
+import { PATHS } from 'utils/consts'
 
 const TitleSection = () => {
   return (

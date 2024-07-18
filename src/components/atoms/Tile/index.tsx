@@ -1,8 +1,8 @@
 import './style.scss'
-import { TileProps } from './interface.ts'
+import { TileProps } from './interface'
 import classNames from 'classnames'
-import useResize from 'hooks/useResize.ts'
-import { MAX_WIDTH } from 'utils/consts.ts'
+import useResize from 'hooks/useResize'
+import { MAX_WIDTH } from 'utils/consts'
 
 const Tile = ({ children, className }: TileProps) => {
   const isNotDesktop = useResize(MAX_WIDTH.desktop)

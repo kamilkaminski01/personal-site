@@ -1,7 +1,7 @@
 import './style.scss'
-import { EXTERNAL_SITES } from 'utils/consts.ts'
-import useResize from 'hooks/useResize.ts'
-import { MAX_WIDTH } from 'utils/consts.ts'
+import { EXTERNAL_SITES } from 'utils/consts'
+import useResize from 'hooks/useResize'
+import { MAX_WIDTH } from 'utils/consts'
 
 const AboutSection = () => {
   const isDesktop = useResize(MAX_WIDTH.desktop)
@@ -19,8 +19,9 @@ const AboutSection = () => {
         In 2020, my journey with software development began, sparked by a fascination with Python.
         Fast-forward to today, and I&apos;ve had the privilege of building software for a{' '}
         {renderLink(EXTERNAL_SITES.leadin, 'start-up')}, a{' '}
-        {renderLink(EXTERNAL_SITES.murator, 'house design agency')}, and big{' '}
-        {renderLink(EXTERNAL_SITES.grupazpr, 'media brands')}.
+        {renderLink(EXTERNAL_SITES.murator, 'house design agency')}, big{' '}
+        {renderLink(EXTERNAL_SITES.grupazpr, 'media brands')} and the{' '}
+        {renderLink(EXTERNAL_SITES.inpost, 'leading logistics company')} in Europe.
       </p>
       <p className="about-section__paragraph">
         My main focus these days is building products for employees at{' '}

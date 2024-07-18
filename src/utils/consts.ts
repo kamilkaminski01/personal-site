@@ -32,8 +32,8 @@ export const EXPERIENCE = [
     link: EXTERNAL_SITES.inpost,
     workType: 'Full time',
     title: 'Software Engineer · InPost',
-    desc: 'Build and maintain tools for InPost employees, ensuring integration of backend and frontend technologies to enhance operational efficiency.',
-    techStack: ['Python', 'Flask', 'FastAPI', 'TypeScript', 'React']
+    desc: 'Build and maintain tools for InPost employees, ensuring integration of backend, frontend and dev-ops technologies to enhance operational efficiency.',
+    techStack: ['Python', 'Flask', 'FastAPI', 'JavaScript', 'React', 'Apache Airflow']
   },
   {
     timeFrame: 'Aug 2023 — Jun 2024',
@@ -82,7 +82,7 @@ export const PROJECTS = [
     link: 'https://school.kamilkaminski.pl/',
     repo: 'https://github.com/kamilkaminski01/school',
     title: 'School Kamil Kamiński',
-    desc: 'Education resources for web developers created by myself. Blog posts, step-by-step tutorials, code examples and more.',
+    desc: 'Website with educational resources for software developers/engineers. Blog posts, step-by-step tutorials, code examples, projects and more.',
     techStack: ['Vue', 'TypeScript', 'SASS', 'Vercel']
   },
   {

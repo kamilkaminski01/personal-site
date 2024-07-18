@@ -1,11 +1,11 @@
 import './style.scss'
 import Tile from 'components/atoms/Tile'
 import { LuArrowUpRight } from 'react-icons/lu'
-import { EXPERIENCE } from 'utils/consts.ts'
+import { EXPERIENCE } from 'utils/consts'
 import Label from 'components/atoms/Label'
-import useResize from 'hooks/useResize.ts'
+import useResize from 'hooks/useResize'
 import { Link } from 'react-router-dom'
-import { MAX_WIDTH } from 'utils/consts.ts'
+import { MAX_WIDTH } from 'utils/consts'
 import { HiMiniLink } from 'react-icons/hi2'
 
 const ExperienceSection = () => {

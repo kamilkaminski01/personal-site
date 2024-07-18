@@ -1,6 +1,6 @@
 import './style.scss'
-import useResize from 'hooks/useResize.ts'
-import { EDUCATION, MAX_WIDTH } from 'utils/consts.ts'
+import useResize from 'hooks/useResize'
+import { EDUCATION, MAX_WIDTH } from 'utils/consts'
 import Tile from 'components/atoms/Tile'
 import { Link } from 'react-router-dom'
 import { LuArrowUpRight } from 'react-icons/lu'

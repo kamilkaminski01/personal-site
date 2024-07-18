@@ -1,13 +1,13 @@
 import './style.scss'
 import { Link } from 'react-router-dom'
-import { PATHS } from 'utils/consts.ts'
+import { PATHS } from 'utils/consts'
 import { GoArrowLeft } from 'react-icons/go'
-import useDocumentTitle from 'hooks/useDocumentTitle.ts'
-import { PROJECTS_ARCHIVE } from 'utils/consts.ts'
+import useDocumentTitle from 'hooks/useDocumentTitle'
+import { PROJECTS_ARCHIVE } from 'utils/consts'
 import Label from 'components/atoms/Label'
 import { LuArrowUpRight } from 'react-icons/lu'
-import useResize from 'hooks/useResize.ts'
-import { MAX_WIDTH } from 'utils/consts.ts'
+import useResize from 'hooks/useResize'
+import { MAX_WIDTH } from 'utils/consts'
 import { IoLogoGithub } from 'react-icons/io'
 
 const ArchivePage = () => {

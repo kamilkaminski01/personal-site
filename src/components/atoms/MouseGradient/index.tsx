@@ -1,8 +1,8 @@
 import './style.scss'
 import { MutableRefObject } from 'react'
 import { useMouse } from '@uidotdev/usehooks'
-import useResize from 'hooks/useResize.ts'
-import { MAX_WIDTH } from 'utils/consts.ts'
+import useResize from 'hooks/useResize'
+import { MAX_WIDTH } from 'utils/consts'
 
 const MouseGradient = () => {
   const [mouse, ref] = useMouse()

@@ -1,7 +1,7 @@
 import './App.scss'
 import HomePage from 'pages/HomePage'
 import { Routes, Route } from 'react-router-dom'
-import { PATHS } from 'utils/consts.ts'
+import { PATHS } from 'utils/consts'
 import ArchivePage from 'pages/ArchivePage'
 import MouseGradient from 'components/atoms/MouseGradient'
 
