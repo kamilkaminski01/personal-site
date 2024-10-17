@@ -1,6 +1,7 @@
 import MonitoringSystem from 'assets/images/monitoring-system.png'
 import JobBoard from 'assets/images/job-board.png'
 import School from 'assets/images/school.png'
+import EventsManager from 'assets/images/events-manager.png'
 
 export const PATHS = {
   home: '/',
@@ -23,7 +24,9 @@ export const EXTERNAL_SITES = {
 export const SOCIAL_MEDIA = {
   github: 'https://github.com/kamilkaminski01',
   linkedin: 'https://www.linkedin.com/in/kamilkaminski01/',
-  email: 'mailto:kamilkaminski39@gmail.com'
+  email: 'mailto:kamilkaminski39@gmail.com',
+  upwork: 'https://www.upwork.com/freelancers/~01a622b7d0a4eb7049',
+  useme: 'https://useme.com/en/roles/contractor/kamil,401463/'
 }
 
 export const EXPERIENCE = [
@@ -33,7 +36,7 @@ export const EXPERIENCE = [
     workType: 'Full time',
     title: 'Software Engineer · InPost',
     desc: 'Build and maintain tools for InPost employees, ensuring integration of backend, frontend and dev-ops technologies to enhance operational efficiency.',
-    techStack: ['Python', 'Flask', 'FastAPI', 'JavaScript', 'React', 'Apache Airflow']
+    techStack: ['Python', 'Flask', 'FastAPI', 'JavaScript', 'React', 'Celery', 'Apache Airflow']
   },
   {
     timeFrame: 'Aug 2023 — Jun 2024',
@@ -83,7 +86,7 @@ export const PROJECTS = [
     repo: 'https://github.com/kamilkaminski01/school',
     title: 'School Kamil Kamiński',
     desc: 'Website with educational resources for software developers/engineers. Blog posts, step-by-step tutorials, code examples, projects and more.',
-    techStack: ['Vue', 'TypeScript', 'SASS', 'Vercel']
+    techStack: ['Vue', 'TypeScript', 'SCSS', 'Vercel']
   },
   {
     api: 'https://api.github.com/repos/kamilkaminski01/monitoring-system',
@@ -92,7 +95,16 @@ export const PROJECTS = [
     repo: 'https://github.com/kamilkaminski01/monitoring-system',
     title: 'Monitoring System',
     desc: 'Web app that allows users to interact within a chosen game. Authenticated users can observe the taken actions of users in a game and communicate with them through a chat in real-time.',
-    techStack: ['Django Channels', 'Redis', 'React', 'SASS', 'PostgreSQL', 'Docker', 'AWS']
+    techStack: ['Django Channels', 'Redis', 'React', 'SCSS', 'PostgreSQL', 'Docker', 'AWS']
+  },
+  {
+    api: 'https://api.github.com/repos/kamilkaminski01/events-manager',
+    img: EventsManager,
+    link: 'https://events-manager.kamilkaminski.pl/',
+    repo: 'https://github.com/kamilkaminski01/monitoring-system',
+    title: 'Events Manager',
+    desc: "Participants and events managing project. Authenticated users can create, update and delete participants, events and it's hosts. Without authentication all data is read-only.",
+    techStack: ['Flask', 'SQLAlchemy', 'React', 'TypeScript', 'PostgreSQL', 'Docker']
   },
   {
     api: 'https://api.github.com/repos/kamilkaminski01/job-board',
@@ -100,12 +112,12 @@ export const PROJECTS = [
     link: 'https://github.com/kamilkaminski01/job-board',
     repo: 'https://github.com/kamilkaminski01/job-board',
     title: 'Job Board',
-    desc: 'A recruitment platform aimed at the IT industry. It allows users to find a job and recruiters to advertise their job positions. Login with social authentication, apply and receive an email about successfully applying.',
+    desc: 'A recruitment platform aimed at the IT industry. It allows users to find a job and recruiters to advertise their job positions. Login with social authentication, apply and receive an email about the successful application.',
     techStack: [
       'Django REST Framework',
       'React',
       'TypeScript',
-      'SASS',
+      'SCSS',
       'AWS SES',
       'GitHub OAuth',
       'Google OAuth 2.0'
@@ -114,6 +126,31 @@ export const PROJECTS = [
 ]
 
 export const PROJECTS_ARCHIVE = [
+  {
+    year: 2024,
+    project: 'Estats',
+    madeAt: 'Freelance',
+    builtWith: [
+      'Flask',
+      'SQLAlchemy',
+      'BeatifulSoup4',
+      'Celery',
+      'Redis',
+      'React',
+      'TypeScript',
+      'SCSS'
+    ],
+    link: 'https://estats.kamilkaminski.pl',
+    shorthandLink: 'estats.kamilkaminski.pl'
+  },
+  {
+    year: 2024,
+    project: 'Django React Chat V2',
+    madeAt: '',
+    builtWith: ['Django', 'Django Channels', 'Redis', 'React', 'TypeScript', 'SCSS'],
+    link: 'https://chat.kamilkaminski.pl',
+    shorthandLink: 'chat.kamilkaminski.pl'
+  },
   {
     year: 2024,
     project: 'Events Manager',
@@ -126,7 +163,7 @@ export const PROJECTS_ARCHIVE = [
     year: 2024,
     project: 'School Kamil Kamiński',
     madeAt: '',
-    builtWith: ['Vue', 'TypeScript', 'SASS', 'Vercel'],
+    builtWith: ['Vue', 'TypeScript', 'SCSS', 'Vercel'],
     link: 'https://school.kamilkaminski.pl/',
     shorthandLink: 'school.kamilkaminski.pl'
   },
@@ -134,7 +171,7 @@ export const PROJECTS_ARCHIVE = [
     year: 2024,
     project: 'Personal Website',
     madeAt: '',
-    builtWith: ['React', 'TypeScript', 'SASS', 'Vercel'],
+    builtWith: ['React', 'TypeScript', 'SCSS', 'Vercel'],
     link: 'https://kamilkaminski.pl/',
     shorthandLink: 'kamilkaminski.pl'
   },
@@ -142,7 +179,7 @@ export const PROJECTS_ARCHIVE = [
     year: 2024,
     project: 'Murator Projekty - House Design Agency',
     madeAt: 'Netstation',
-    builtWith: ['Python', 'Django', 'JavaScript', 'SASS', 'Docker'],
+    builtWith: ['Python', 'Django', 'JavaScript', 'SCSS', 'Docker'],
     link: 'https://projekty.muratordom.pl/',
     shorthandLink: 'projekty.muratordom.pl'
   },
@@ -155,7 +192,7 @@ export const PROJECTS_ARCHIVE = [
       'React',
       'TypeScript',
       'Vite',
-      'SASS',
+      'SCSS',
       'AWS SES',
       'Google OAuth 2',
       'GitHub OAuth'
@@ -180,7 +217,7 @@ export const PROJECTS_ARCHIVE = [
       'Django Channels',
       'Redis',
       'React',
-      'SASS',
+      'SCSS',
       'PostgreSQL',
       'Docker',
       'AWS'
