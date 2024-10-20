@@ -35,15 +35,15 @@ export const EXPERIENCE = [
     link: EXTERNAL_SITES.inpost,
     workType: 'Full time',
     title: 'Software Engineer · InPost',
-    desc: 'Build and maintain tools for InPost employees, ensuring integration of backend, frontend and dev-ops technologies to enhance operational efficiency.',
+    desc: "Building and maintaining tools for InPost employees including ETL's, automating data processing and web applications that enhance operational efficiency.",
     techStack: ['Python', 'Flask', 'FastAPI', 'JavaScript', 'React', 'Celery', 'Apache Airflow']
   },
   {
     timeFrame: 'Aug 2023 — Jun 2024',
     link: EXTERNAL_SITES.netstation,
     workType: 'Full time',
-    title: 'Software Developer · Netstation',
-    desc: 'Deliver high-quality, robust production code for a diverse array of projects for clients including Super Express, Eska, Murator and more.',
+    title: 'Python Developer · Netstation',
+    desc: 'Delivered high-quality, robust production code for a diverse array of projects including clients like Super Express, Eska, Murator and more.',
     tags: [
       {
         title: 'Super Express',
