@@ -1,0 +1,5 @@
+@use 'assets/styles/mixins';
+
+.experience-section {
+  @include mixins.main__section;
+}

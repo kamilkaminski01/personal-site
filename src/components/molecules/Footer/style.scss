@@ -1,16 +1,18 @@
+@use 'assets/styles/variables';
+
 footer {
-  color: $dark-slate;
+  color: variables.$dark-slate;
   font-size: 0.875em;
   margin-top: 9em;
   max-width: 28em;
   line-height: 1.45;
 
   .footer__link {
-    color: $slate;
+    color: variables.$slate;
     transition: color ease-in-out 0.2s;
 
     &:hover {
-      color: $green;
+      color: variables.$green;
     }
   }
 }

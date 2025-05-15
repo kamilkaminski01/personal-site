@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer>
       Coded by myself, inspired by {renderLink('https://github.com/bchiang7', 'Brittany Chiang')}.
-      Built with {renderLink('https://react.dev/', 'React.js')} in TypeScript and{' '}
+      Built with {renderLink('https://nextjs.org/', 'Next.js')} in TypeScript and{' '}
       {renderLink('https://sass-lang.com/', 'SASS')}, deployed with{' '}
       {renderLink('https://vercel.com/', 'Vercel')}.
     </footer>

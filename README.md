@@ -4,7 +4,7 @@
 <h1 align="center">kamilkaminski.pl</h1>
 
 <p align="center">
-  The first version of <a href="https://kamilkaminski.pl" target="_blank">kamilkaminski.pl</a> built with TypeScript in <a href="https://react.dev/" target="_blank">React</a> and deployed with <a href="https://vercel.com/" target="_blank">Vercel</a>
+  The first version of <a href="https://kamilkaminski.pl" target="_blank">kamilkaminski.pl</a> built with TypeScript in <a href="https://nextjs.org/" target="_blank">Next</a> and deployed with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 
 ![demo](https://raw.githubusercontent.com/kamilkaminski01/personal-site/main/src/assets/images/demo.png)

@@ -1,26 +1,32 @@
+'use client'
+
 import './style.scss'
-import { MutableRefObject } from 'react'
 import { useMouse } from '@uidotdev/usehooks'
-import useResize from 'hooks/useResize'
-import { MAX_WIDTH } from 'utils/consts'
+import { MutableRefObject, useEffect, useRef } from 'react'
+import useMediaQuery from 'hooks/useMediaQuery'
 
 const MouseGradient = () => {
-  const [mouse, ref] = useMouse()
-  const isNotDesktop = useResize(MAX_WIDTH.desktop)
+  const [mouse, baseRef] = useMouse()
+  const htmlRef = useRef<HTMLDivElement>(null)
+  const isDesktop = useMediaQuery('(min-width: 1025px)')
+
+  useEffect(() => {
+    if (htmlRef.current)
+      (baseRef as MutableRefObject<HTMLDivElement | null>).current = htmlRef.current
+  }, [baseRef])
 
   return (
-    <>
-      {isNotDesktop ? (
-        <div
-          ref={ref as MutableRefObject<HTMLDivElement>}
-          className="mouse-gradient"
-          style={{
-            background: `radial-gradient(600px at ${mouse.elementX}px ${mouse.elementY}px, rgba(29, 78, 216, 0.15), transparent 80%)`
-          }}></div>
-      ) : (
-        <div className="mouse-gradient"></div>
-      )}
-    </>
+    <div
+      ref={htmlRef}
+      className="mouse-gradient"
+      style={
+        isDesktop
+          ? {
+              background: `radial-gradient(600px at ${mouse.elementX}px ${mouse.elementY}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+            }
+          : undefined
+      }
+    />
   )
 }
 

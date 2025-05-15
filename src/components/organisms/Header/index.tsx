@@ -1,7 +1,7 @@
 import './style.scss'
-import TitleSection from './partials/sections/TitleSection'
-import Navbar from './partials/components/Navbar'
-import SocialMedia from './partials/components/SocialMedia'
+import TitleSection from 'components/molecules/TitleSection'
+import Navbar from 'components/molecules/Navbar'
+import SocialMedia from 'components/molecules/SocialMedia'
 
 const Header = () => {
   return (

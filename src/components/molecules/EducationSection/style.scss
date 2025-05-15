@@ -1,0 +1,13 @@
+@use 'assets/styles/mixins';
+
+.education-section {
+  @include mixins.main__section;
+
+  .tile {
+    .tile--hover {
+      width: 105%;
+      height: 200%;
+      inset: -50% -5%;
+    }
+  }
+}

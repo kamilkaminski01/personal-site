@@ -2,6 +2,7 @@ import MonitoringSystem from 'assets/images/monitoring-system.png'
 import JobBoard from 'assets/images/job-board.png'
 import School from 'assets/images/school.png'
 import EventsManager from 'assets/images/events-manager.png'
+import { IProject } from 'models/project'
 
 export const PATHS = {
   home: '/',
@@ -78,7 +79,7 @@ export const EXPERIENCE = [
   }
 ]
 
-export const PROJECTS = [
+export const PROJECTS: IProject[] = [
   {
     api: 'https://api.github.com/repos/kamilkaminski01/school',
     img: School,
@@ -126,6 +127,14 @@ export const PROJECTS = [
 ]
 
 export const PROJECTS_ARCHIVE = [
+  {
+    year: 2025,
+    project: 'Linia Produkcyjna Flipów',
+    madeAt: 'Freelance',
+    builtWith: ['Next.js', 'TypeScript', 'SCSS', 'Vercel'],
+    link: 'https://liniaprodukcyjnaflipow.pl',
+    shorthandLink: 'liniaprodukcyjnaflipow.pl'
+  },
   {
     year: 2024,
     project: 'Estats',
@@ -273,8 +282,3 @@ export const EDUCATION = [
     degree: "Bachelor's degree"
   }
 ]
-
-export const MAX_WIDTH = {
-  desktop: 1024,
-  phone: 640
-}

@@ -1,9 +1,11 @@
+@use 'assets/styles/variables';
+
 .label {
   padding: 0.4em 0.8em;
-  color: $green;
+  color: variables.$green;
   font-size: 0.8em;
   font-weight: 500;
 
   border-radius: 10em;
-  background-color: $green-tint;
+  background-color: variables.$green-tint;
 }

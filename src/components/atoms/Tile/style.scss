@@ -1,3 +1,11 @@
+@use 'assets/styles/mixins';
+
 .tile {
-  @include section__tile;
+  @include mixins.section__tile;
+
+  .tile--hover {
+    @include mixins.for-desktop {
+      display: none;
+    }
+  }
 }

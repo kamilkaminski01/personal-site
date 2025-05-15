@@ -1,0 +1,84 @@
+@use 'assets/styles/variables';
+@use 'assets/styles/mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 6em;
+
+  .home-page {
+    display: flex;
+    gap: 1em;
+    max-width: 1050px;
+
+    & > * {
+      flex-basis: 50%;
+    }
+
+    main {
+      @include mixins.for-desktop {
+        padding: 6em 0 0;
+      }
+    }
+  }
+
+  & {
+    color: variables.$white;
+    background-color: variables.$dark-navy;
+
+    font-family:
+      'Calibre',
+      'Inter',
+      'San Francisco',
+      'SF Pro Text',
+      -apple-system,
+      system-ui,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    color: variables.$lightest-navy;
+    background-color: variables.$green;
+  }
+
+  ::-moz-selection {
+    color: variables.$lightest-navy;
+    background-color: variables.$green;
+  }
+
+  @include mixins.for-desktop {
+    margin: unset;
+    padding: 5em 3em;
+
+    .home-page {
+      flex-direction: column;
+    }
+  }
+
+  @include mixins.for-tablet {
+    padding: 3em 1.5em;
+  }
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}

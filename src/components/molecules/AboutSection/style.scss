@@ -1,0 +1,19 @@
+@use 'assets/styles/variables';
+@use 'assets/styles/mixins';
+
+.about-section {
+  color: variables.$slate;
+  line-height: 1.7;
+
+  .about-section__paragraph {
+    margin-bottom: 0.75em;
+
+    .paragraph__link {
+      @include mixins.active-hover;
+    }
+  }
+
+  .about-section__header {
+    @include mixins.sticky-header;
+  }
+}

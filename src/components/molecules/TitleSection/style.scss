@@ -1,0 +1,29 @@
+@use 'assets/styles/variables';
+@use 'assets/styles/mixins';
+
+.title-section {
+  .title-section__title {
+    font-size: 3em;
+  }
+
+  .title-section__subtitle {
+    margin-top: 0.75em;
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+
+  .title-section__desc {
+    margin-top: 1em;
+    color: variables.$slate;
+  }
+
+  @include mixins.for-phone {
+    .title-section__title {
+      font-size: 2.25em;
+
+      .title-section__subtitle {
+        font-size: 1.125em;
+      }
+    }
+  }
+}

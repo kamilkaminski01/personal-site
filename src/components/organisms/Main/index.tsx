@@ -1,9 +1,9 @@
 import './style.scss'
-import AboutSection from './partials/sections/AboutSection'
-import ExperienceSection from './partials/sections/ExperienceSection'
+import AboutSection from 'components/molecules/AboutSection'
+import ExperienceSection from 'components/molecules/ExperienceSection'
 import Footer from 'components/molecules/Footer'
-import ProjectsSection from './partials/sections/ProjectsSection'
-import EducationSection from './partials/sections/EducationSection'
+import ProjectsSection from 'components/molecules/ProjectsSection'
+import EducationSection from 'components/molecules/EducationSection'
 
 const Main = () => {
   return (
