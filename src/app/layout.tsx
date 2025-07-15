@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import type { Metadata, Viewport } from 'next'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import 'assets/styles/globals.scss'
 import MouseGradient from 'components/atoms/MouseGradient'
 
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <Analytics />
+      <SpeedInsights />
       <body>
         <MouseGradient />
         {children}
