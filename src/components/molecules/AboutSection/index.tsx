@@ -25,9 +25,8 @@ const AboutSection = () => {
         developing my skills in Flask, FastAPI, React, and DevOps methodologies.
       </p>
       <p className="about-section__paragraph">
-        Apart from my regular work hours, I enjoy keeping up with the newest trends and technologies
-        to stay up-to-date. I&apos;m also in the final stages of completing my master&apos;s degree
-        in computer science.
+        Apart from my regular work hours, I keep up with the newest trends and technologies to stay
+        up-to-date. Additionally, I completed a master&apos;s degree in computer science.
       </p>
     </section>
   )

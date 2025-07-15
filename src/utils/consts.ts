@@ -270,7 +270,7 @@ export const PROJECTS_ARCHIVE = [
 
 export const EDUCATION = [
   {
-    timeFrame: '2023 — Present',
+    timeFrame: '2023 — 2025',
     title: 'Computer Science · University of Bialystok',
     link: 'https://informatyka.uwb.edu.pl/',
     degree: "Master's degree"
