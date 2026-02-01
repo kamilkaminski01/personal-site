@@ -128,6 +128,22 @@ export const PROJECTS: IProject[] = [
 
 export const PROJECTS_ARCHIVE = [
   {
+    year: 2026,
+    project: 'Kult Technology - Website',
+    madeAt: 'Kult Technology',
+    builtWith: ['Next.js', 'TypeScript', 'SCSS', 'Vercel'],
+    link: 'https://kulttechnology.pl',
+    shorthandLink: 'kulttechnology.pl'
+  },
+  {
+    year: 2025,
+    project: 'DropFlow',
+    madeAt: 'Kult Technology',
+    builtWith: ['Flask', 'SQLAlchemy', 'Celery', 'Redis', 'React', 'TypeScript', 'SCSS'],
+    link: 'https://dropflow.dev',
+    shorthandLink: 'dropflow.dev'
+  },
+  {
     year: 2025,
     project: 'Linia Produkcyjna Flipów',
     madeAt: 'Freelance',
@@ -138,7 +154,7 @@ export const PROJECTS_ARCHIVE = [
   {
     year: 2024,
     project: 'Estats',
-    madeAt: 'Freelance',
+    madeAt: 'Kult Technology',
     builtWith: [
       'Flask',
       'SQLAlchemy',
