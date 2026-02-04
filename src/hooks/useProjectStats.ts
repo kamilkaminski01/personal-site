@@ -5,25 +5,26 @@ import { IProject } from 'models/project'
 const useProjectStats = (project: IProject) => {
   const [projectStats, setProjectStats] = useState<IProjectStats | null>(null)
 
-  const fetchProjectStats = async () => {
-    try {
-      const response = await fetch(project.api)
-      const data = await response.json()
-      setProjectStats({
-        repo: project.repo,
-        stars: data.stargazers_count || null,
-        forks: data.forks || null,
-        watchers: data.watchers_count || null
-      })
-    } catch {
-      setProjectStats({ repo: project.repo, stars: null, forks: null, watchers: null })
-    }
-  }
-
   useEffect(() => {
+    if (!project.api) return
+
+    const fetchProjectStats = async () => {
+      try {
+        const response = await fetch(project.api!)
+        const data = await response.json()
+        setProjectStats({
+          repo: project.repo,
+          stars: data.stargazers_count || null,
+          forks: data.forks || null,
+          watchers: data.watchers_count || null
+        })
+      } catch {
+        setProjectStats({ repo: project.repo, stars: null, forks: null, watchers: null })
+      }
+    }
+
     fetchProjectStats()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [project.api, project.repo])
 
   return { projectStats }
 }
