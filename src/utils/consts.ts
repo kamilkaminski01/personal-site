@@ -1,7 +1,7 @@
 import MonitoringSystem from 'assets/images/monitoring-system.png'
 import JobBoard from 'assets/images/job-board.png'
 import School from 'assets/images/school.png'
-import EventsManager from 'assets/images/events-manager.png'
+import DropFlow from 'assets/images/dropflow.png'
 import { IProject } from 'models/project'
 
 export const PATHS = {
@@ -81,11 +81,29 @@ export const EXPERIENCE = [
 
 export const PROJECTS: IProject[] = [
   {
+    img: DropFlow,
+    link: 'https://dropflow.dev/',
+    repo: 'https://github.com/kamilkaminski01/dropflow',
+    title: 'DropFlow',
+    desc: 'All-in-one platform that automates dropshipping operations — from order fulfillment and supplier sync to tracking, logistics, and scaling your e-commerce business.',
+    techStack: [
+      'Python',
+      'Flask',
+      'SQLAlchemy',
+      'PostgreSQL',
+      'Docker',
+      'Celery',
+      'React',
+      'TypeScript',
+      'SCSS'
+    ]
+  },
+  {
     api: 'https://api.github.com/repos/kamilkaminski01/school',
     img: School,
     link: 'https://school.kamilkaminski.pl/',
     repo: 'https://github.com/kamilkaminski01/school',
-    title: 'School Kamil Kamiński',
+    title: 'Software Engineer Resources',
     desc: 'Website with educational resources for software developers/engineers. Blog posts, step-by-step tutorials, code examples, projects and more.',
     techStack: ['Vue', 'TypeScript', 'SCSS', 'Vercel']
   },
@@ -97,15 +115,6 @@ export const PROJECTS: IProject[] = [
     title: 'Monitoring System',
     desc: 'Web app that allows users to interact within a chosen game. Authenticated users can observe the taken actions of users in a game and communicate with them through a chat in real-time.',
     techStack: ['Django Channels', 'Redis', 'React', 'SCSS', 'PostgreSQL', 'Docker', 'AWS']
-  },
-  {
-    api: 'https://api.github.com/repos/kamilkaminski01/events-manager',
-    img: EventsManager,
-    link: 'https://events-manager.kamilkaminski.pl/',
-    repo: 'https://github.com/kamilkaminski01/monitoring-system',
-    title: 'Events Manager',
-    desc: "Participants and events managing project. Authenticated users can create, update and delete participants, events and it's hosts. Without authentication all data is read-only.",
-    techStack: ['Flask', 'SQLAlchemy', 'React', 'TypeScript', 'PostgreSQL', 'Docker']
   },
   {
     api: 'https://api.github.com/repos/kamilkaminski01/job-board',
@@ -127,6 +136,14 @@ export const PROJECTS: IProject[] = [
 ]
 
 export const PROJECTS_ARCHIVE = [
+  {
+    year: 2026,
+    project: 'Kult Invest - Website',
+    madeAt: 'Kult Technology',
+    builtWith: ['Next.js', 'TypeScript', 'SCSS', 'Vercel'],
+    link: 'https://kultinvest.pl',
+    shorthandLink: 'kultinvest.pl'
+  },
   {
     year: 2026,
     project: 'Kult Technology - Website',
@@ -186,7 +203,7 @@ export const PROJECTS_ARCHIVE = [
   },
   {
     year: 2024,
-    project: 'School Kamil Kamiński',
+    project: 'Software Engineer Resources',
     madeAt: '',
     builtWith: ['Vue', 'TypeScript', 'SCSS', 'Vercel'],
     link: 'https://school.kamilkaminski.pl/',

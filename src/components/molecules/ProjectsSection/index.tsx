@@ -23,7 +23,7 @@ const ProjectsSection = () => {
                 </h4>
               </a>
               <p className="tile__desc">{project.desc}</p>
-              <TileProjectStats {...project} />
+              {project.api && <TileProjectStats {...project} />}
               <div className="tile__tech-stack">
                 {project.techStack.map((techStack, index) => (
                   <Label key={index} text={techStack} />

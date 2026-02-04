@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image'
 
 export interface IProject {
-  api: string
+  api?: string
   img: StaticImageData
   link: string
   repo: string

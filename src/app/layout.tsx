@@ -7,14 +7,14 @@ import MouseGradient from 'components/atoms/MouseGradient'
 
 export const metadata: Metadata = {
   title: 'Kamil Kamiński - Software Engineer',
-  description: 'Full Stack Developer in Python & React',
+  description: 'Fullstack Developer in Python & React',
   robots: 'index, follow',
   manifest: '/manifest.json',
   openGraph: {
     type: 'website',
     url: 'https://kamilkaminski.pl',
     title: 'Kamil Kamiński - Software Engineer',
-    description: 'Full Stack Developer in Python & React',
+    description: 'Fullstack Developer in Python & React',
     siteName: 'Kamil Kamiński - Software Engineer',
     images: 'https://kamilkaminski.pl/og.png'
   },
