@@ -2,22 +2,15 @@
 
 import './style.scss'
 import { useMouse } from '@uidotdev/usehooks'
-import { MutableRefObject, useEffect, useRef } from 'react'
 import useMediaQuery from 'hooks/useMediaQuery'
 
 const MouseGradient = () => {
-  const [mouse, baseRef] = useMouse()
-  const htmlRef = useRef<HTMLDivElement>(null)
+  const [mouse, mouseRef] = useMouse<HTMLDivElement>()
   const isDesktop = useMediaQuery('(min-width: 1025px)')
-
-  useEffect(() => {
-    if (htmlRef.current)
-      (baseRef as MutableRefObject<HTMLDivElement | null>).current = htmlRef.current
-  }, [baseRef])
 
   return (
     <div
-      ref={htmlRef}
+      ref={mouseRef}
       className="mouse-gradient"
       style={
         isDesktop

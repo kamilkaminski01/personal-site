@@ -1,12 +1,12 @@
 {
-  "name": "personal-site-v2",
+  "name": "personal-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
@@ -14,23 +14,23 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "classnames": "^2.5.1",
-    "next": "15.3.8",
+    "next": "16.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.0.1",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
     "@types/react-scroll": "^1.8.10",
     "eslint": "^9",
-    "eslint-config-next": "15.3.2",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-prettier": "^5.2.3",
-    "prettier": "^3.5.2",
+    "eslint-config-next": "16.1.6",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.1",
     "sass-embedded": "^1.85.0",
     "typescript": "^5"
   }
