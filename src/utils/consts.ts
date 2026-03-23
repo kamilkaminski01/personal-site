@@ -105,7 +105,7 @@ export const PROJECTS: IProject[] = [
     repo: 'https://github.com/kamilkaminski01/school',
     title: 'Software Engineer Resources',
     desc: 'Website with educational resources for software developers/engineers. Blog posts, step-by-step tutorials, code examples, projects and more.',
-    techStack: ['Vue', 'TypeScript', 'SCSS', 'Vercel']
+    techStack: ['Vue.js', 'TypeScript', 'SCSS', 'Vercel']
   },
   {
     api: 'https://api.github.com/repos/kamilkaminski01/monitoring-system',
@@ -138,6 +138,14 @@ export const PROJECTS: IProject[] = [
 export const PROJECTS_ARCHIVE = [
   {
     year: 2026,
+    project: 'DropFlow',
+    madeAt: 'Kult Technology',
+    builtWith: ['Lovable', 'React.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    link: 'https://dropflow.dev',
+    shorthandLink: 'dropflow.dev'
+  },
+  {
+    year: 2026,
     project: 'Kult Invest - Website',
     madeAt: 'Kult Technology',
     builtWith: ['Next.js', 'TypeScript', 'SCSS', 'Vercel'],
@@ -148,17 +156,17 @@ export const PROJECTS_ARCHIVE = [
     year: 2026,
     project: 'Kult Technology - Website',
     madeAt: 'Kult Technology',
-    builtWith: ['Next.js', 'TypeScript', 'SCSS', 'Vercel'],
+    builtWith: ['Lovable', 'React.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
     link: 'https://kulttechnology.pl',
     shorthandLink: 'kulttechnology.pl'
   },
   {
     year: 2025,
-    project: 'DropFlow',
+    project: 'DropFlow Web App',
     madeAt: 'Kult Technology',
     builtWith: ['Flask', 'SQLAlchemy', 'Celery', 'Redis', 'React', 'TypeScript', 'SCSS'],
-    link: 'https://dropflow.dev',
-    shorthandLink: 'dropflow.dev'
+    link: 'https://app.dropflow.dev',
+    shorthandLink: 'app.dropflow.dev'
   },
   {
     year: 2025,
@@ -205,7 +213,7 @@ export const PROJECTS_ARCHIVE = [
     year: 2024,
     project: 'Software Engineer Resources',
     madeAt: '',
-    builtWith: ['Vue', 'TypeScript', 'SCSS', 'Vercel'],
+    builtWith: ['Vue.js', 'TypeScript', 'SCSS', 'Vercel'],
     link: 'https://school.kamilkaminski.pl/',
     shorthandLink: 'school.kamilkaminski.pl'
   },
