@@ -37,7 +37,7 @@ export const EXPERIENCE = [
     workType: 'Full time',
     title: 'Software Engineer · InPost',
     desc: "Building and maintaining tools for InPost employees including ETL's, automating data processing and web applications that enhance operational efficiency.",
-    techStack: ['Python', 'Flask', 'FastAPI', 'JavaScript', 'React', 'Celery', 'Apache Airflow']
+    techStack: ['Python', 'Flask', 'FastAPI', 'TypeScript', 'React', 'Celery', 'Apache Airflow']
   },
   {
     timeFrame: 'Aug 2023 — Jun 2024',
@@ -167,14 +167,6 @@ export const PROJECTS_ARCHIVE = [
     builtWith: ['Flask', 'SQLAlchemy', 'Celery', 'Redis', 'React', 'TypeScript', 'SCSS'],
     link: 'https://app.dropflow.dev',
     shorthandLink: 'app.dropflow.dev'
-  },
-  {
-    year: 2025,
-    project: 'Linia Produkcyjna Flipów',
-    madeAt: 'Freelance',
-    builtWith: ['Next.js', 'TypeScript', 'SCSS', 'Vercel'],
-    link: 'https://liniaprodukcyjnaflipow.pl',
-    shorthandLink: 'liniaprodukcyjnaflipow.pl'
   },
   {
     year: 2024,
