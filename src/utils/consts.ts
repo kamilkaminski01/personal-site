@@ -110,7 +110,7 @@ export const PROJECTS: IProject[] = [
   {
     api: 'https://api.github.com/repos/kamilkaminski01/monitoring-system',
     img: MonitoringSystem,
-    link: 'https://monitoring-system.kamilkaminski.pl/',
+    link: 'https://github.com/kamilkaminski01/monitoring-system',
     repo: 'https://github.com/kamilkaminski01/monitoring-system',
     title: 'Monitoring System',
     desc: 'Web app that allows users to interact within a chosen game. Authenticated users can observe the taken actions of users in a game and communicate with them through a chat in real-time.',
