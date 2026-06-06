@@ -190,16 +190,16 @@ export const PROJECTS_ARCHIVE = [
     project: 'Django React Chat V2',
     madeAt: '',
     builtWith: ['Django', 'Django Channels', 'Redis', 'React', 'TypeScript', 'SCSS'],
-    link: 'https://chat.kamilkaminski.pl',
-    shorthandLink: 'chat.kamilkaminski.pl'
+    link: 'https://github.com/kamilkaminski01/django-react-chat',
+    shorthandLink: ''
   },
   {
     year: 2024,
     project: 'Events Manager',
     madeAt: '',
     builtWith: ['Python', 'Flask', 'SQLAlchemy', 'React', 'TypeScript', 'SCSS'],
-    link: 'https://events-manager.kamilkaminski.pl/',
-    shorthandLink: 'events-manager.kamilkaminski.pl'
+    link: 'https://github.com/kamilkaminski01/events-manager',
+    shorthandLink: ''
   },
   {
     year: 2024,
@@ -264,8 +264,8 @@ export const PROJECTS_ARCHIVE = [
       'Docker',
       'AWS'
     ],
-    link: 'https://monitoring-system.kamilkaminski.pl/',
-    shorthandLink: 'monitoring-system.kamilkaminski.pl'
+    link: 'https://github.com/kamilkaminski01/monitoring-system',
+    shorthandLink: ''
   },
   {
     year: 2023,
